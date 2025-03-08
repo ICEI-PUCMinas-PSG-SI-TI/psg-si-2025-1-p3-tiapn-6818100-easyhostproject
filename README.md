@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# EASYHost
 
-`CURSO`
+`SISTEMAS DE INFORMAÇÃO`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicações para Processos de Negócios`
 
-`SEMESTRE`
+`TERCEIRO SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+
+O Easy Host, que é um sistema de gerenciamento de hoteis, nosso principal alvo são os donos de pequenos hoteis e pousadas que ficaram pra trás na questão da tecnologia, idealizamos o desenvolvimento de um sistema de informação que seja simples, leve e portátil, para que pequenos negócios e hoteis possam centralizar suas informações e gerenciar todos seus processos.
+A ideia seria de um sistema web conectado com um banco de dados e responsivo, para que desde o funcionário da parte administrativa possa acessar as informações pelo computador até o funcionário responsável pela a limpeza e manutenção tenha acesso às informações que necessita de qualquer lugar e a qualquer hora.
+
 
 ## Integrantes
 
 * Gabriel Fernandes Duque dos Santos
 * Guilherme Henrique Fernandes
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bruno Caixeta Figueiredo
+* Thiago Villani Marinho
 
 ## Orientador
 
-* Nome completo do professor 1
+* Cleia Marcia Gomes Amaral
 
 ## Instruções de utilização
 
