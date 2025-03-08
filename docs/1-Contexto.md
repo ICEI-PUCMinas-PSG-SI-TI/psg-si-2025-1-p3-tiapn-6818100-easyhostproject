@@ -1,14 +1,12 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A tecnologia da informação revolucionou a hotelaria de diversas maneiras, o que antes era feito de maneira muito analógica (com sua maior parte feita em papel), passou a ser centralizado, todas as operações do hotel foi unida em um só sistema trazendo uma eficiência e rapidez sem igual também a automação de processos, além disso, com a centralização de informações é possível fazer uma análise de dados e atingir o público esperado.
+Essas facilidades possibilitaram que as grandes redes de hotel crescessem de maneira exponencial, porém, você já se perguntou, será que esses sistemas de informação atingem as pequenas redes de hotel
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+O problema da desorganização e falta de recursos para gestão ocorre em muitos lugares e impede o crescimento da hotelaria dos lugares mais remotos, o principal problema é a falta de organização e descentralização de informações que torna o processo muito mais custoso e difícil.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
+A aplicação será usada por pequenas redes de hotéis e negócios em lugares remotos.
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
@@ -16,18 +14,17 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Por isso nos propomos a desenvolver o Easy Host, que é um sistema de gerenciamento de hoteis.
+Nosso principal alvo são os donos de pequenos hoteis e pousadas que ficaram pra trás na questão da tecnologia, idealizamos o desenvolvimento de um sistema de informação que seja simples, leve e portátil, para que pequenos negócios e hoteis possam centralizar suas informações e gerenciar todos seus processos.
+A ideia seria de um sistema web conectado com um banco de dados e responsivo, para que desde o funcionário da parte administrativa possa acessar as informações pelo computador até o funcionário responsável pela a limpeza e manutenção tenha acesso às informações que necessita de qualquer lugar e a qualquer hora
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A principal razão que nos motivou a elaborar esse sistema foi a de democratizar o acesso a sistemas de informação.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
