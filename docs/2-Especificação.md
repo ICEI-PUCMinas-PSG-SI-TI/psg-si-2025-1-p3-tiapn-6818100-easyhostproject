@@ -38,6 +38,11 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                                     |PARA ... `MOTIVO/VALOR`                                |
+|--------------------|------------------------------------------------------------------------|-------------------------------------------------------|
+|Usuário do sistema  | Visualizar de forma mais simples quais tarefas foram alocadas a mim.   | Facilitar o serviço e ter mais eficiência no trabalho |
+|Administrador       | Gerenciar folha salarial                                               | Fazer melhor uso do orçamento da empresa              |
+
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
