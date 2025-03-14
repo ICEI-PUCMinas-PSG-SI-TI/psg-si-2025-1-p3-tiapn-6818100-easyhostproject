@@ -22,6 +22,20 @@ Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos 
 >
 Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
+User Personas
+
+1. Givanildo Barbosa, 38 anos, Gerente de Hotel
+ 
+Givanildo tem 38 anos e gerencia um hotel boutique em uma cidade turística. Seu cotidiano em relação a seu serviço envolve organizar a equipe de limpeza para garantir que os quartos estejam prontos para os hóspedes e coordenar a equipe da recepção. Givanildo precisa de uma ferramenta para facilitar na alocação dos quartos e no gerenciamento de serviço de quarto. Como trabalha com uma equipe pequena, precisa de um sistema intuitivo que reduza o tempo gasto com atividades manuais e aumente a eficiência do seu trabalho.
+
+2. Max Verstappen, 27 anos, Dono de Hotel/Pousada
+
+Max tem 27 anos e é proprietário de uma pousada que herdou de sua familia. Max tem uma visão mais estratégica em relação a sua pousada e quer acompanhar os custos operacionais do hotel sem perder tempo com tarefas simples do dia a dia. A sua maior preocupação é conseguir manter os lucros do négocio, garantindo que a equipe esteja bem gerida e com maior facilidade de visualizar a folha de pagamento e o orçamento. Ele prefere não usar sistemas muito complexos e prefere algo que ofereça uma gestão fácil e intuitiva.
+
+3. Larissa Santos, 32 anos, Coordenadora do departamento de serviço de quarto de Hotel
+
+Larissa tem 32 anos e é responsável por coordenar a equipe de limpeza e manutenção do hotel. Seu trabalho envolve garantir que os quartos estejam sempre prontos e que os serviços de quarto sejam realizados no prazo ou a pedido do hóspede. Larissa precisa de uma ferramenta que permita visualizar facilmente quais quartos precisam de limpeza, quais funcionários estão disponíveis para realizar essa limpeza e de um jeito mais facil de organizar a equipe para trabalhar de forma eficiente.
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
