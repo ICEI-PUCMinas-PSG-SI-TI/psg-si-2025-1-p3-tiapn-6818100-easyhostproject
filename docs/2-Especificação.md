@@ -8,18 +8,6 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
-
 User Personas
 
 1. Givanildo Barbosa, 38 anos, Gerente de Hotel
@@ -33,6 +21,20 @@ Max tem 27 anos e é proprietário de uma pousada que herdou de sua familia. Max
 3. Larissa Santos, 32 anos, Coordenadora do departamento de serviço de quarto de Hotel
 
 Larissa tem 32 anos e é responsável por coordenar a equipe de limpeza e manutenção do hotel. Seu trabalho envolve garantir que os quartos estejam sempre prontos e que os serviços de quarto sejam realizados no prazo ou a pedido do hóspede. Larissa precisa de uma ferramenta que permita visualizar facilmente quais quartos precisam de limpeza, quais funcionários estão disponíveis para realizar essa limpeza e de um jeito mais facil de organizar a equipe para trabalhar de forma eficiente.
+
+Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+
+> **Links Úteis**:
+> - [Rock Content](https://rockcontent.com/blog/personas/)
+> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
+> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
+> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
+> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
+>
+Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+
+
 
 ## Histórias de Usuários
 
