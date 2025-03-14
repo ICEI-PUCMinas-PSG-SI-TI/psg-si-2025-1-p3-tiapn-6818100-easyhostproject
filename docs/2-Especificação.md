@@ -66,6 +66,7 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
 
+*NOSSOS REQUISITOS*
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito               | Prioridade |
@@ -84,6 +85,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 
 -----------------------------------------------------------------------------------------
+*TEMPLATE REQUISITOS*
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
