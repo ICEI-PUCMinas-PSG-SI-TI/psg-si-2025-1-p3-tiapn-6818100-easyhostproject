@@ -4,7 +4,7 @@
 
 `Trabalho Interdisciplinar: Aplicações para Processos de Negócios`
 
-`TERCEIRO SEMESTRE`
+`PRIMEIRO SEMESTRE - 2025`
 
 
 O Easy Host, que é um sistema de gerenciamento de hoteis, nosso principal alvo são os donos de pequenos hoteis e pousadas que ficaram pra trás na questão da tecnologia, idealizamos o desenvolvimento de um sistema de informação que seja simples, leve e portátil, para que pequenos negócios e hoteis possam centralizar suas informações e gerenciar todos seus processos.
