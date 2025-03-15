@@ -76,6 +76,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| Menu de serviços de quartos          | MÉDIO |
 |RF-004| Gerenciamento de folha salarial      | ALTA |
 |RF-005| Cadastro de funcionários             | ALTA |
+|RF-006| Controle de materiais de uso e consumo| BAIXA |
+
 
 ### Requisitos não Funcionais
 
