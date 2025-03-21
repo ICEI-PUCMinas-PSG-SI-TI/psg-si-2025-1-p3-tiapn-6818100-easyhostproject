@@ -41,7 +41,6 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                                                                           |PARA ... `MOTIVO/VALOR`                                              |
 |--------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 |Givanildo Barbosa   | Gerenciamento de alocação de quartos                                                                         | Reduzir tempo gasto manualmente e melhorar a eficiência do hotel    |
-                     | Gerenciamento de serviço de quarto                                                                           |                                                                     |
 |Givanildo Barbosa   | Ferramenta para gerenciar a alocação de quartos e o gerenciamento de serviços de quarto                      | Reduzir tempo gasto manualmente e melhorar a eficiência do hotel    |
 |Max Verstappen      | Ferramenta para garantir boa gestão da equipe e visualizar a folha de pagamento de forma mais prática        | Acompanhar as equipes e custos oepracionais do hotel com eficiência |
 |Larissa Santos      | Método que permita visualizar os quartos com necessidade de limpeza e alocação de funcionários a esse quarto | Organizar a equipe de forma rápida e prática                        |
