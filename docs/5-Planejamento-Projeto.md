@@ -34,16 +34,23 @@ Atualizado em: 21/04/2024
 | Guilherme        | Personas  |    01/01/2024        | 12/02/2005 | ✔️    |       |
 | Guilherme        | Requisitos |    01/01/2024        | 12/02/2005 | ✔️    |       |
 
+
 ## Sprint 2
 
 Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Home-Page        | 01/02/2024     | 07/03/2024 | ✔️    | 05/01/2005      |
-| AlunaZ        | CSS Unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Guilherme        | Home-Page        | 01/02/2024     | 07/03/2024 | ✔️    | 05/01/2005      |
+| Thiago        | CSS Unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
+| Thiago        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
+| Thiago        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Gabriel        | Cadastro de hotel para gerenciamento	  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Gabriel        | Alocação de hóspedes em quartos		  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Guilherme        | Menu de serviços de quartos		  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Guilherme        | Gerenciamento de folha salarial  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Bruno        | Cadastro de funcionários  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Bruno        | Controle de materiais de uso e consumo  |  01/01/2024    | 12/03/2024 | ❌    |       |
 
 
 Legenda:
