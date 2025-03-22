@@ -7,16 +7,16 @@
 > Apresente a divisão de papéis entre os membros do grupo em cada sprint. O desejável é que, em cada sprint, o aluno assuma papéis diferentes na disciplina. Siga o modelo do exemplo abaixo:
 
 ### Sprint 1
-- _Scrum master_: AlunaX
-- Protótipos: AlunoY
-- Testes: AlunoK
-- Documentação: AlunaZ
+- _Scrum master_: Bruno
+- Protótipos: Guilherme
+- Testes: Thiago
+- Documentação: Gabriel
 
 ### Sprint 2
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- _Scrum master_: Bruno
+- Desenvolvedor _front-end_: Guilherme
+- Desenvolvedor _back-end_: Gabriel
+- Testes: Thiago
 
 ## 5.1. Quadro de tarefas
 
@@ -28,10 +28,10 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/01/2005      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Gabriel        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/01/2005      |
+| Bruno        | Objetivos    | 03/02/2024     | 10/02/2024 | ✔️    |                 |
+| Thiago        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ✔️     |                 |
+| Guilherme        | Personas 1  |    01/01/2024        | 12/02/2005 | ✔️    |       |
 
 ## Sprint 2
 
