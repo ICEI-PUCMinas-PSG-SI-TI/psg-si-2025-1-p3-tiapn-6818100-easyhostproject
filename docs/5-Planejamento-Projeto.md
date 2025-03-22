@@ -31,7 +31,8 @@ Atualizado em: 21/04/2024
 | Gabriel        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/01/2005      |
 | Bruno        | Objetivos    | 03/02/2024     | 10/02/2024 | ✔️    |                 |
 | Thiago        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ✔️     |                 |
-| Guilherme        | Personas 1  |    01/01/2024        | 12/02/2005 | ✔️    |       |
+| Guilherme        | Personas  |    01/01/2024        | 12/02/2005 | ✔️    |       |
+| Guilherme        | Requisitos |    01/01/2024        | 12/02/2005 | ✔️    |       |
 
 ## Sprint 2
 
