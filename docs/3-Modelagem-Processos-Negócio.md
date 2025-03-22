@@ -10,21 +10,31 @@
 _Apresente uma descrição textual de como os sistemas atuais resolvem o problema que se propõe a resolver.  Caso sua proposta seja inovadora e não existam processos claramente definidos, **apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente**, mesmo que não se utilize tecnologia computacional._
 Com o tema do projeto definido, escolham alguns processos neste contexto de negócios. Para ilustrar potenciais ganhos com a automatização, imaginem processos manuais, ineficientes e/ou com muitas idas e vindas, gerando, assim, retrabalho.
 
-1. **Reserva e Check-in**  
+1. **Gestão de Reserva**  
    - **Contato inicial por telefone ou e-mail:** O cliente entra em contato para verificar disponibilidade de quartos. Todas as anotações são feitas em formulários de papel ou em planilhas dispersas.  
    - **Confirmação da reserva:** Após o cliente confirmar, o funcionário preenche um formulário e arquiva em uma pasta específica. Em alguns casos, a reserva pode ser perdida ou duplicada, pois não há um sistema centralizado que controle a ocupação.  
-   - **Recepção do hóspede:** No check-in, o cliente preenche novamente seus dados em um livro físico, que pode conter rasuras ou dados ilegíveis.
 
-2. **Gerenciamento de Hóspedes e Serviços Internos**  
-   - **Informações de hospedagem:** As solicitações de serviços (manutenção, limpeza especial, refeições extras) são comunicadas diretamente ao funcionário de plantão ou anotadas em notas adesivas, sem um procedimento claro de acompanhamento.  
+2. **Check-in**    
+   - **Recepção do hóspede:** No check-in, o cliente preenche novamente seus dados em um livro físico, que pode conter rasuras ou dados ilegíveis.
+   - **Recepção do hóspede:** Depois disso, o cliente recebe a chave do seu quarto e é direcinado.
+
+3. **Gerenciamento do serviço para Hóspedes**  
+   - **Solicitações de serviços:** As solicitações dos serviços de quarto são feitas por meio de telefone e anotadas em papel, é um processo sejeito a esquecimentos.  
+   - **Distribuição de tarefas:** Os responsáveis pela realização desses serviços são avisados e vão até os quartos entregar o que foi solicitado.
+
+4. **Gerenciamento de Serviços Internos**  
+   - **Solicitações de serviços:** As solicitações de serviços (manutenção, limpeza especial, refeições extras) são comunicadas diretamente ao funcionário de plantão ou anotadas em notas adesivas, sem um procedimento claro de acompanhamento.  
    - **Distribuição de tarefas:** Os responsáveis pela limpeza e manutenção recebem instruções verbalmente ou em recados pouco organizados, ocasionando atrasos ou execução de serviços em duplicidade.
 
-3. **Faturamento e Pagamentos**  
+5. **Faturamento e Pagamentos**  
    - **Registro de despesas e pagamentos:** Tanto as despesas do hóspede quanto as contas do hotel (fornecedores, água, energia) são registradas em planilhas ou cadernos. Falhas humanas são frequentes, gerando inconsistências e dificuldade para conferência.  
    - **Pagamento ao final da estadia:** O hóspede efetua o pagamento em dinheiro ou cartão, que muitas vezes não é registrado de forma imediata e sistemática, comprometendo o controle financeiro.
 
-4. **Checkout e Avaliação**  
-   - **Conferência manual de consumos:** O funcionário do balcão acessa diversas anotações para checar se houve consumo de frigobar ou outros serviços. Esse procedimento costuma ser lento e sujeito a erros.  
+6. **Checkout**  
+   - **Conferência manual de consumos:** O checkout é realizado no balcão onde a chave é entregue e os processos são encerrados, os consumiveis são verificados e o pagamanto se consumido é feito.  
+   - **Feedback do hóspede:** Não há processo estruturado para coleta de avaliação. Em geral, é solicitada verbalmente uma opinião, sem registro formal que permita análise posterior.
+
+7. **Avaliação**  
    - **Feedback do hóspede:** Não há processo estruturado para coleta de avaliação. Em geral, é solicitada verbalmente uma opinião, sem registro formal que permita análise posterior.
 
 ---
