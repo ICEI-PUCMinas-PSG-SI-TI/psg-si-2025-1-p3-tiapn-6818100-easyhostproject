@@ -15,7 +15,7 @@
 ### Sprint 2
 - _Scrum master_: Bruno
 - Desenvolvedor _front-end_: Guilherme
-- Desenvolvedor _back-end_: Gabriel
+- Desenvolvedor _back-end_: Thiago
 - Testes: Thiago
 
 ## 5.1. Quadro de tarefas
@@ -26,31 +26,31 @@
 
 Atualizado em: 21/04/2024
 
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Gabriel        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/01/2005      |
-| Bruno        | Objetivos    | 03/02/2024     | 10/02/2024 | ✔️    |                 |
-| Thiago        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ✔️     |                 |
-| Guilherme        | Personas  |    01/01/2024        | 12/02/2005 | ✔️    |       |
-| Guilherme        | Requisitos |    01/01/2024        | 12/02/2005 | ✔️    |       |
+| Responsável | Tarefa/Requisito     | Iniciado em | Prazo      | Status | Terminado em |
+| :----       |    :----             |      :----: | :----:     | :----: | :----:       |
+| Gabriel     | Introdução           | 19/02/2025  | 21/02/2025 | ✔️    | 20/02/2025   |
+| Bruno       | Objetivos            | 19/02/2025  | 21/02/2025 | ✔️    | 20/02/2025   |
+| Thiago      | Histórias de usuário | 19/02/2025  | 21/02/2025 | ✔️    | 20/02/2025   |
+| Guilherme   | Personas             | 19/02/2025  | 21/02/2025 | ✔️    | 20/02/2025   |
+| Guilherme   | Requisitos           | 19/02/2025  | 21/02/2025 | ✔️    | 20/02/2025   |
 
 
 ## Sprint 2
 
 Atualizado em: 21/04/2024
 
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Guilherme        | Home-Page        | 01/02/2024     | 07/03/2024 | ✔️    | 05/01/2005      |
-| Thiago        | CSS Unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| Thiago        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| Thiago        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
-| Gabriel        | Cadastro de hotel para gerenciamento	  |  01/01/2024    | 12/03/2024 | ❌    |       |
-| Gabriel        | Alocação de hóspedes em quartos		  |  01/01/2024    | 12/03/2024 | ❌    |       |
-| Guilherme        | Menu de serviços de quartos		  |  01/01/2024    | 12/03/2024 | ❌    |       |
-| Guilherme        | Gerenciamento de folha salarial  |  01/01/2024    | 12/03/2024 | ❌    |       |
-| Bruno        | Cadastro de funcionários  |  01/01/2024    | 12/03/2024 | ❌    |       |
-| Bruno        | Controle de materiais de uso e consumo  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Responsável | Tarefa/Requisito                       | Iniciado em | Prazo      | Status | Terminado em |
+| :----       |    :----                               |      :----: | :----:     | :----: | :----:       |
+| Guilherme   | Home-Page                              | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Thiago      | CSS Unificado                          | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Thiago      | Página de login                        | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Thiago      | Script de login                        | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Gabriel     | Cadastro de hotel para gerenciamento	 | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Gabriel     | Alocação de hóspedes em quartos		     | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Guilherme   | Menu de serviços de quartos		         | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Guilherme   | Gerenciamento de folha salarial        | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Bruno       | Cadastro de funcionários               | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Bruno       | Controle de materiais de uso e consumo | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 
 
 Legenda:
