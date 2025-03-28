@@ -1,9 +1,14 @@
 ### 3.3.1 Processo 1 – Gestão de reservas
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 
-![Exemplo de um Modelo BPMN do PROCESSO 1](../docs/images/Processo 1 - Gerenciamento de reservas.png)
+O processo de gerenciamento de reservas tem como objetivo tornar as operações mais dinâmicas e precisas, minimizando erros e garantindo maior eficiência. Para isso, busca-se a automação de etapas-chave, integrando diferentes setores do hotel para otimizar o fluxo de informações e garantir uma experiência mais ágil e confiável tanto para os hóspedes quanto para a equipe de atendimento.
+
+**Modelo de processo (BPMN) - Gerência de reservas:**
+
+
+
+![Exemplo de um Modelo BPMN do PROCESSO 1](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Processo-1-Gerenciamento-de-reservas.png)
+
 
 
 #### Detalhamento das atividades
