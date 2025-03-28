@@ -5,9 +5,9 @@
 Os sistemas atuais de gerenciamento hoteleiro são amplamente utilizados por grandes redes de hotéis, oferecendo soluções completas que integram reservas, gestão financeira, controle de estoque, atendimento ao cliente e outras funcionalidades. No entanto, essas plataformas costumam ser complexas, exigem alto investimento e necessitam de infraestrutura robusta para operar, o que as torna inacessíveis para pequenos hotéis e pousadas situados em locais remotos.
 A implementação do Easy Host eliminará muitas dessas ineficiências ao oferecer um sistema acessível, leve e fácil de usar. O software permitirá que pequenos hotéis centralizem suas operações, automatizem processos e reduzam erros.
 
-1. **Gestão de Alocação de Hóspedes**    
-   - **Verificação da disponibilidade de quartos:** Os responsáveis pela pela alocação dos hóspedes nos quartos verificam se há algum quarto vazio.  
-   - **Confirmação da alocação:** Após a seleção do quarto para o hóspede, o cliente é alocado no sistema atribuido ao quarto selecionado.  
+1. **Gestão de Reserva**  
+    - **Contato inicial por telefone ou e-mail:** O cliente entra em contato para verificar disponibilidade de quartos. Todas as anotações são feitas em formulários de papel ou em planilhas dispersas.  
+    - **Confirmação da reserva:** Após o cliente confirmar, o funcionário preenche um formulário e arquiva em uma pasta específica. Em alguns casos, a reserva pode ser perdida ou duplicada, pois não há um sistema centralizado que controle a ocupação.  
 
 2. **Check-in**    
    - **Recepção do hóspede:** No check-in, o cliente preenche novamente seus dados em um livro físico, que pode conter rasuras ou dados ilegíveis.
