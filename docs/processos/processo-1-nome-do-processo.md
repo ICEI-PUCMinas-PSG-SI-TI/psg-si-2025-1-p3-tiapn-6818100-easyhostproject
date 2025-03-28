@@ -3,7 +3,7 @@
 _Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
 Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 
-![Exemplo de um Modelo BPMN do PROCESSO 1]("..images/Processo-1-Gerenciamento-de-reservas.png")
+![Exemplo de um Modelo BPMN do PROCESSO 1](..images/Processo-1-Gerenciamento-de-reservas.png)
 
 
 #### Detalhamento das atividades
