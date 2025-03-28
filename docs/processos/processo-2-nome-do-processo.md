@@ -3,7 +3,6 @@
 Oportunidades de melhoria na automatização do cadastro e integração com reservas
 
 
-![Exemplo de um Modelo BPMN do PROCESSO 2](../images/process.png "Modelo BPMN do Processo 2.")
 ![CHECK IN](https://github.com/user-attachments/assets/e70235e2-3c31-4820-a407-81d25b887494)
 
 
