@@ -1,7 +1,7 @@
 ### 3.3.2 Processo 2 – CHECK IN
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 2. 
-Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN._
+Oportunidades de melhoria na automatização do cadastro e integração com reservas
+
 
 ![Exemplo de um Modelo BPMN do PROCESSO 2](../images/process.png "Modelo BPMN do Processo 2.")
 ![CHECK IN](https://github.com/user-attachments/assets/e70235e2-3c31-4820-a407-81d25b887494)
