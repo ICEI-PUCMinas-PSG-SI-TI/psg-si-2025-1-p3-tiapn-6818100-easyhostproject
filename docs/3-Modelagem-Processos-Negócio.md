@@ -58,7 +58,9 @@ Tendo identificado os gargalos dos modelos AS IS, apresentem uma descrição da 
 Colem aqui os modelos da solução proposta (modelo TO BE) elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina.
 Cada processo identificado deve ter seu modelo TO-BE específico. Descrevam as oportunidades de melhoria de cada processo da solução proposta.
 
-_Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias._
+Nossa proposta é desenvolver uma aplicação que irá ajudar pequenos hotéis a se organizarem melhor por meio dos sistemas de informação. O nosso sistema auxiliará no gerenciamento de hóspedes, serviços internos, serviços de quarto, funcionários e estoque (uso e consumo). Ao oferecer uma solução intuitiva e acessível, eliminamos a dependência de processos manuais e descentralizados, reduzindo erros e melhorando a eficiência operacional. Além disso, a plataforma será otimizada para dispositivos móveis, garantindo praticidade para os gestores acompanharem as operações em tempo real.
+
+A proposta está alinhada com a estratégia de modernização e otimização dos pequenos negócios hoteleiros, permitindo que acompanhem melhor seus custos e aumentem a satisfação dos hóspedes. Entre as oportunidades de melhoria, destacamos a possibilidade de automação de tarefas repetitivas, integração entre setores do hotel e geração de relatórios detalhados para análise de desempenho. Essas funcionalidades contribuirão para a tomada de decisões mais assertivas e para o crescimento sustentável dos estabelecimentos.
 
 ### 3.3. Modelagem dos processos
 
