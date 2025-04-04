@@ -58,4 +58,4 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 
 [PROCESSO 1 - Gestão de reservas](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
 
-[PROCESSO 2 - Nome do Processo](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[Processo 2 – CHECK IN](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
