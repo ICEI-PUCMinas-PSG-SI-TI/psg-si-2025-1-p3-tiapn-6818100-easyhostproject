@@ -3,7 +3,7 @@
 Oportunidades de melhoria na automatização do cadastro e integração com reservas
 
 
-![CHECK IN](https://github.com/user-attachments/assets/e70235e2-3c31-4820-a407-81d25b887494)
+![CHECK IN](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Processo%202%20-%20Check%20in%20revisado.png)
 
 
 
