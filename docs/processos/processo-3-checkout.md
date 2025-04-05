@@ -1,12 +1,12 @@
-### 3.3.1 Processo 
+### 3.3.1 Processo 3 - CHECKOUT
 
-O processo 
+O processo de checkout tem como objetivo tornar a finalização da estadia mais dinâmica, rápida e confiável, reduzindo o tempo de espera e evitando inconsistências nos registros de consumo e pagamentos. Ao automatizar etapas como a conferência de consumos e a geração de relatórios, o sistema garante mais precisão nas informações e melhora a experiência do hóspede, ao mesmo tempo em que facilita o trabalho da equipe de recepção.
 
 **Modelo de processo (BPMN) - :**
 
 
 
-![Exemplo de um Modelo BPMN do PROCESSO 1]()
+![Exemplo de um Modelo BPMN do PROCESSO 1](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%203%20-%20CHECKOUT.png)
 
 
 #### Detalhamento das atividades
