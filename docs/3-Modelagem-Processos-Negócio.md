@@ -59,3 +59,7 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 [PROCESSO 1 - Gestão de reservas](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
 
 [Processo 2 – CHECK IN](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+
+[PROCESSO 3 - CHECKOUT](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-3-checkout.md)
+
+[PROCESSO 4 - Registrar despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-4-nome-do-processo.md)
