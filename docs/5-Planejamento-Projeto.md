@@ -16,7 +16,7 @@
 - _Scrum master_: Bruno
 - Desenvolvedor _front-end_: Guilherme
 - Desenvolvedor _back-end_: Thiago
-- Testes: Thiago
+- Testes: Gabriel
 
 ## 5.1. Quadro de tarefas
 
