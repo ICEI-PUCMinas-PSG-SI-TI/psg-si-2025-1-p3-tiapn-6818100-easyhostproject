@@ -40,10 +40,7 @@ Atualizado em: 11/04/2024
 
 | Responsável | Tarefa/Requisito                       | Iniciado em | Prazo      | Status | Terminado em |
 | :----       |    :----                               |      :----: | :----:     | :----: | :----:       |
-| Guilherme   | Home-Page                              | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
-| Thiago      | CSS Unificado                          | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
-| Thiago      | Página de login                        | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
-| Thiago      | Script de login                        | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Thiago     | Descrição Modelagem AS IS	 | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Gabriel     | Cadastro de hotel para gerenciamento	 | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Gabriel     | Alocação de hóspedes em quartos		     | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Guilherme   | Menu de serviços de quartos		         | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
@@ -51,7 +48,7 @@ Atualizado em: 11/04/2024
 | Bruno       | Cadastro de funcionários               | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Bruno       | Controle de materiais de uso e consumo | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Bruno       | Identificação da modelagem de processo |  27/03/2025 | 28/03/2025 | ✔️    | 04/04/2025   |
-| Bruno       | Descrição da modelagem de processo     |  27/03/2025 | 28/03/2025 | ✔️    | 04/04/2025   |
+| Thiago       | Descrição da modelagem de processo     |  27/03/2025 | 28/03/2025 | ✔️    | 04/04/2025   |
 | Gabriel     | Modelagem de processo N1 - Reserva     |  27/03/2025 | 28/03/2025 | ✔️    | 04/04/2025   |
 | Guilherme   | Modelagem de processo N2 - Check In    |  27/03/2025 | 28/03/2025 | ✔️    | 04/04/2025   |
 | Gabriel     | Modelagem de processo N4 - Check Out   |  27/03/2025 | 28/03/2025 | ✔️    | 04/04/2025   |
