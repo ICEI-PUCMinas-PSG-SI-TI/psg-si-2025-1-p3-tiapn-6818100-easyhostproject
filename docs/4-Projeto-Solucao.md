@@ -4,16 +4,26 @@
 
 ## 4.1. Arquitetura da solução
 
+O sistema Easy Host foi pensado para ser uma solução prática, organizada e fácil de usar, voltada especialmente para pequenos hotéis e pousadas. Para isso, adotamos uma arquitetura em camadas, separando o que é interface, o que é processamento e o que é armazenamento de dados. Isso torna o sistema mais organizado e fácil de manter.
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+Abaixo, apresentamos o diagrama da estrutura do sistema:
 
- Inclua um diagrama da solução e descreva os módulos e as tecnologias
- que fazem parte da solução. Discorra sobre o diagrama.
- 
- **Exemplo do diagrama de Arquitetura**:
- 
- ![Exemplo de Arquitetura](./images/arquitetura-exemplo.png)
- 
+Descrição dos Módulos e Tecnologias
+Usuário: O sistema pode ser acessado diretamente pelo navegador, tanto no computador quanto no celular, permitindo maior praticidade para os usuários.
+
+Frontend (Angular): Escolhemos o Angular para construir a parte visual do sistema, por ser uma tecnologia moderna que permite criar páginas rápidas e responsivas. O frontend se comunica com o backend usando requisições HTTP.
+
+Backend (C# .NET): Para cuidar das regras do sistema e do funcionamento das funções, usamos C# com .NET, uma tecnologia robusta e eficiente, muito utilizada no mercado.
+
+Banco de Dados (SQL Server): Todas as informações, como reservas e dados dos hóspedes, serão armazenadas em um banco de dados SQL Server, facilitando o acesso rápido e seguro às informações.
+
+Hospedagem (a definir): Pretendemos usar Docker para empacotar e hospedar o sistema, o que nos permite mais flexibilidade para instalar tanto em servidores locais quanto em nuvens, dependendo da necessidade do cliente.
+
+Justificativa da Arquitetura
+Organizamos o sistema dessa forma para facilitar futuras melhorias, como adicionar novas funcionalidades sem precisar refazer o que já foi construído. Separar a interface, o processamento e o banco de dados também facilita o trabalho em equipe e deixa o sistema mais estável e confiável.
+
+ ![Arquitetura da Solução](images/arquitetura_solucao.png)
+
 
 ### 4.2. Protótipos de telas
 
