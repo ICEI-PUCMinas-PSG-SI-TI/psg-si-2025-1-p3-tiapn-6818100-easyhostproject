@@ -1,12 +1,12 @@
-### 3.3.1 Processo 
+### 3.3.1 Processo 5 Gerenciamento do serviço para Hóspedes
 
-O processo 
+O atendimento começa com o cliente solicitando um serviço por telefone. O atendente registra todas as informações no sistema, associando o pedido ao nome do cliente. Após o registro, o pedido é formalizado e automaticamente direcionado para os setores responsáveis pela execução do serviço, dando início ao processo interno de atendimento. 
 
 **Modelo de processo (BPMN) - :**
 
 
 
-![Exemplo de um Modelo BPMN do PROCESSO 1](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/dispesa.jpg)
+![Modelo BPMN do PROCESSO 5](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%205%20-%20Gerenciamento%20do%20servi%C3%A7o%20para%20H%C3%B3spedes.png)
 
 
 #### Detalhamento das atividades
