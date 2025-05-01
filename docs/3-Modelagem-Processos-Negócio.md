@@ -29,8 +29,6 @@ A implementação do Easy Host eliminará muitas dessas ineficiências ao oferec
    - **Conferência manual de consumos:** O checkout é realizado no balcão onde a chave é entregue e os processos são encerrados, os consumiveis são verificados e o pagamanto se consumido é feito.  
    - **Feedback do hóspede:** Não há processo estruturado para coleta de avaliação. Em geral, é solicitada verbalmente uma opinião, sem registro formal que permita análise posterior.
 
-7. **Avaliação**  
-   - **Feedback do hóspede:** Não há processo estruturado para coleta de avaliação. Em geral, é solicitada verbalmente uma opinião, sem registro formal que permita análise posterior.
 
 ---
 
@@ -65,4 +63,6 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 [PROCESSO 4 - Registrar despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-4-nome-do-processo.md)
 
 [PROCESSO 5 - Gerenciamento do serviço para Hóspedes](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-5-Gerenciamento-do-servico-para-Hospedes.md)
+
+[Processo 6 – Gerenciamento de Serviços Internos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-6-Gerenciamento-de-Servi%C3%A7os-Internos.md)
 
