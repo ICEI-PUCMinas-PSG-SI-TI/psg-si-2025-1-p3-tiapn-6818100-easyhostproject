@@ -63,3 +63,6 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 [PROCESSO 3 - CHECKOUT](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-3-checkout.md)
 
 [PROCESSO 4 - Registrar despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-4-nome-do-processo.md)
+
+[PROCESSO 5 - Gerenciamento do serviço para Hóspedes](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-5-Gerenciamento-do-servico-para-Hospedes.md)
+
