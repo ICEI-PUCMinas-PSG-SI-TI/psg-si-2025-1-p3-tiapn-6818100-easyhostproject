@@ -1,12 +1,12 @@
-### 3.3.1 Processo 
+### 3.3.1 Processo 6 Gerenciamento de Serviços Internos
 
-O processo 
+A solicitação é criada e imediatamente adicionada à lista de pendências do sistema. Em seguida, o serviço é executado e atribuído a um funcionário responsável. Após a conclusão, a solicitação é marcada como finalizada e arquivada para controle e registro. 
 
 **Modelo de processo (BPMN) - :**
 
 
 
-![Exemplo de um Modelo BPMN do PROCESSO 1](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/dispesa.jpg)
+![Modelo BPMN do PROCESSO 6](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%206%20-%20Gerenciamento%20de%20Servi%C3%A7os%20Internos.png)
 
 
 #### Detalhamento das atividades
