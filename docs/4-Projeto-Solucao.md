@@ -31,27 +31,28 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="02-Especificação do Projeto.md"> Especificação do Projeto</a>.
 A partir das atividades de usuário identificadas na seção anterior, elabore o protótipo de tela de cada uma delas.
 
-**LOGIN**
+### <p align="center">Login</p>
+
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20login.png)
-**HOME (FUNCIONÁRIO)**
+### <p align="center">HOME (FUNCIONÁRIO)</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20HOME%20(FUNCIONARIO).png)
-**HOME (ADMIN)**
+### <p align="center">HOME (ADMIN)</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20HOME%20(ADMIN).png)
-**MENU DE QUARTOS**
+### <p align="center">MENU DE QUARTOS</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20MENU%20DE%20QUARTOS.png)
-**PÁGINA QUARTOS (DISPONÍVEL)**
+### <p align="center">PÁGINA QUARTOS (DISPONÍVEL)</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20P%C3%81GINA%20QUARTO%20(DISPONIVEL).png)
-**PÁGINA QUARTOS (OCUPADO)**
+### <p align="center">PÁGINA QUARTOS (OCUPADO)</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20P%C3%81GINA%20QUARTO%20(HOSPEDADO).png)
-**CRUD (FUNCIONÁRIO)**
+### <p align="center">CRUD (FUNCIONÁRIO)</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20CRUD%20(FUNCIONARIOS).png)
-**CRUD (QUARTOS)**
+### <p align="center">CRUD (QUARTOS)</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20CRUD%20(QUARTOS).png)
-**CRUD (SERVIÇOS)**
+### <p align="center">CRUD (SERVIÇOS)</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20CRUD%20(SERVI%C3%87OS).png)
-**SERVIÇOS INTERNOS**
+### <p align="center">SERVIÇOS INTERNOS</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20SERVI%C3%87OS%20INTERNOS.png)
-**RELATÓRIO GERAL**
+### <p align="center">RELATÓRIO GERAL</p>
 ![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20RELAT%C3%93RIO%20GERAL.png)
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
