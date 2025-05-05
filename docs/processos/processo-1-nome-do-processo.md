@@ -42,31 +42,49 @@ _* **Link** - campo que armazena uma URL_
 _* **Tabela** - campo formado por uma matriz de valores_
 
 
-**Nome da atividade 1**
+**Requisição de reserva**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| nome | Caixa de texto  |       obrigatório         |                   |
+| e-mail | Caixa de texto  |        formato xxxxxxx@xmail.com       |                   |
+| telefone | Número  |       formato(xx)xxxxx-xxxx         |                   |
+| data_checkin | Data  |      formato dd-mm-aaaa          |                   |
+| data_checkout | Data  |       formato dd-mm-aaaa         |                   |
+| tipo_quarto | Seleção única  |       opção: solteiro,casal         |                   |
+| quantidade_pessoas | Número  |        mínimo 1        |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| enviar | Recebimento de pedido de reserva  | default |
+| cancelar | Fim do processo  | cancel |
 
-
-**Nome da atividade 2**
+**Avisar cliente sobre indisponibilidade**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| e-mail_cliente | Caixa de texto  |        formato de e-mail       |                   |
+|          mensagem      |        Área de texto          |       texto automático informando a indisponibilidade         |                   |
+
+**Fornecimento de dados**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| dados_cliente | Tabela  |       dados preenchido na reserva         |                   |
+|         valor total       |        Número          |        calculado com base nas datas de checkin e checkout        |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| prosseguir | pagamento da reservar  | default  |
+
+**Confirmar reserva para o cliente**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| e-mail_cliente | Caixa de texto  |        formato de e-mail        |                   |
+|        mensagem        |         Área de texto         |       texto automático de confirmação         |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| encerrar | fim do processo  | default |
+
