@@ -41,31 +41,61 @@ _* **Link** - campo que armazena uma URL_
 _* **Tabela** - campo formado por uma matriz de valores_
 
 
-**Nome da atividade 1**
+**Registrar Despesas**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| Nome do hóspede | Caixa de texto  | obrigatório  |                   |
+| Nº da reserva | Número  | obrigatório  |                   |
+| Tipo de despesa  | Seleção única |  alimentação, lavanderia, etc. |                   |
+| Valor da despesa | Número   | maior que 0 |                |
+| Data da despesa          | Data  | mínimo de 8 caracteres |  data atual  |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| salvar | Verificar Conformidade  | default |
 
-
-**Nome da atividade 2**
+**Verificar Conformidade das Despesas**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Lista de despesas | Tabela  | somente leitura |  preenchida pelo sistema  |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| continuar| Decisão: Já pagou?  | default |
+
+**Cobrar as Despesas**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Valor total | Número | somente leitura  |                   |
+| Forma de pagamento | Seleção única | crédito, débito, pix |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| pagar | Confirmar Pagamento  | default |
+
+**Somar Hospedagem + Despesas**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Valor da hospedagem | Número | somente leitura |                   |
+| Valor das despesas | Número  |somente leitura  |                   |
+| Total a pagar |  Número  |somente leitura  |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| cobrar total | Confirmar Pagamento  | default |
+
+**Confirmar Pagamento**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Confirmação | Seleção única  |  sim, não   |                   |
+| Data e hora   |Data e Hora   |  automática  | data atual  |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| finalizar | Finalizar Processo  | default |
+
