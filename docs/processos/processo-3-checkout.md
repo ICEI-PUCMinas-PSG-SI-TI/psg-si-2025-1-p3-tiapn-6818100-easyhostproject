@@ -41,31 +41,67 @@ _* **Link** - campo que armazena uma URL_
 _* **Tabela** - campo formado por uma matriz de valores_
 
 
-**Nome da atividade 1**
+**Acessar sistema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
 | login           | Caixa de Texto   | formato de e-mail |                |
 | senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
 | entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| cancelar            | Fim do processo                 | cancel            |
 
 
-**Nome da atividade 2**
+**Verificar consumo pelo sistema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Nome do hóspede | Caixa de texto  | obrigatório |                   |
+| Número da reserva |Número         | obrigatório |                   |
+| Itens consumidos |Tabela        | preenchido pelo sistema |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| continuar            | Devolver/Pagar                 | default           |
+| sair                | Fim do processo                | cancel            |
+
+**Pagar consumíveis**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Valor total | Número  |somente leitura    |                   |
+| Método de pagamento| Seleção única | débito, crédito, pix |                   |
+| Comprovante | Arquivo | opcional |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| pagar | Devolver as chaves  | default|
+
+
+
+**Encerramento da estadia no sistema**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Data e hora saída | Data e Hora  | automático | data atual |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| concluir | Agendamento limpeza  | default |
+
+
+**Agendamento da limpeza**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Número do quarto | Número  |  obrigatório  |                   |
+| Data da limpeza | Data             | >= data atual  |                   |
+| Observações   |  Área de texto  |  opcional |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| salvar |Fim do processo  | default |
+
+
