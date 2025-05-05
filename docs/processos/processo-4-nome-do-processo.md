@@ -6,7 +6,7 @@ O processo
 
 
 
-![Exemplo de um Modelo BPMN do PROCESSO 1](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/dispesa.jpg)
+![Exemplo de um Modelo BPMN do PROCESSO 1](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/BPMN%20processo%20de%20pagamento.jpeg)
 
 
 #### Detalhamento das atividades
