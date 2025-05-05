@@ -41,31 +41,29 @@ _* **Link** - campo que armazena uma URL_
 _* **Tabela** - campo formado por uma matriz de valores_
 
 
-**Nome da atividade 1**
+**Atendente registra pedido no sistema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| Nome do cliente | caixa de texto  |       obrigatório         |                   |
+| Número do quarto | Número  |         somente números inteiros       |                   |
+| Tipo de serviço | Seleção única  |        opções de serviços       |                   |
+| Descrição do pedido | Área de texto  |        mínimo de 10 caracteres        |                   |
+| Data e hora do pedido | Data e Hora  |      formato dd-mm-aaaa, hh:mm:ss          |         data/hora: atual          |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| registrar | Pedido enviado a central  | default |
+| cancelar | fim do processo  | cancel |
 
-
-**Nome da atividade 2**
+**Pedido enviado à central de serviços internos**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| ID do pedido | Número  |        gerado automaticamente        |        auto           |
+|         Departamento destino        |         Seleção única         |        baseado no tipo de serviço        |                   |
+| Observações internas | Área de texto  |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| encaminhar | Fim do processo  | default |
