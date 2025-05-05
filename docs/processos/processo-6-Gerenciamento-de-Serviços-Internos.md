@@ -41,31 +41,59 @@ _* **Link** - campo que armazena uma URL_
 _* **Tabela** - campo formado por uma matriz de valores_
 
 
-**Nome da atividade 1**
+**Solicitação criada no sistema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| Tipo de serviço | Seleção única  |  obrigatório |                   |
+| Descrição da tarefa  | Texto longo  | obrigatório  |                   |
+| Prioridade         | Seleção única  | baixa/média/alta | média |
+| Data de criação  | Data e hora  |automático | agora  |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| registrar | Adicionada à lista de pendência | default |
 
-
-**Nome da atividade 2**
+**Adicionada à lista de pendência**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Tarefa | Somente leitura |                |  da atividade anterior |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| disponibilizar | Funcionário seleciona e realiza  | default |
+
+**Funcionário seleciona e realiza a tarefa**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Lista de tarefas | Tabela  | seleção obrigatória|                   |
+| Observações | Texto | opcional|                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| concluir tarefa| Funcionário conclui e atribui ao nome  | default |
+
+**Funcionário conclui e atribui ao seu nome**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Nome do funcionário | Texto | automático | login do usuário |
+| Data de conclusão | Data e hora | automático | agora  |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| arquivar | Tarefa concluída e arquivada no sistema  | default |
+
+**Tarefa concluída e arquivada no sistema**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Registro da tarefa | Somente leitura  | histórico |  preenchido |
+| Status | Texto | automático |  concluída |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| fim | Encerrar  | default |
+
