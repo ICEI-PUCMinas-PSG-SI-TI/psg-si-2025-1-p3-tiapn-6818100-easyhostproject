@@ -38,31 +38,57 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Verificar reserva no sistema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| CPF do cliente | Caixa de texto  |formato: 000.000.000-00|                   |
+| Nome completo  |Caixa de texto |obrigatório|                   |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| continuar | Entrega chave / Verif. quartos  | default |
+| cancelar       | Fim do processo |  cancel |
 
 
-**Nome da atividade 2**
+
+**Verificação de disponibilidade de quartos**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Tipo de quarto desejado | Seleção única  | obrigatório | Standard |
+| Data de entrada | Data             | >= data atual  |                   |
+| Data de saída   | Data             | > data de entrada  |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| verificar | Confirmação dos dados  | default |
+| voltar          | Verificar reserva    |  cancel |
+
+**Confirmação dos dados do cliente**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Nome completo | Caixa de texto  | obrigatório |        |
+| CPF | Caixa de texto    | formato válido  |                   |
+| Telefone   | Caixa de texto        | obrigatório  |                   |
+| Documento com foto   | Arquivo       | formato .jpg/.pdf  |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| confirmar | Alocação do cliente  | default |
+| cancelar         | Fim do processo    |  cancel |
+
+**Alocação do cliente**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Número do quarto | Número  | quarto disponível |        |
+| Andar | Número    | >= 1  |                   |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| concluir | Entrega chave  | default |
+
