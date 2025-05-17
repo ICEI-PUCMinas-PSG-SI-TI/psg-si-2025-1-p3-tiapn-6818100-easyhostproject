@@ -139,8 +139,8 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
-| SGBD           | MySQL           |
-| Front end      | HTML+CSS+JS     |
-| Back end       | Java SpringBoot |
+| SGBD           | SQL SERVER           |
+| Front end      | React Framework     |
+| Back end       | .NET |
 | Deploy         | Github Pages    |
 
