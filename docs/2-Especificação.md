@@ -1,13 +1,6 @@
 # Especificações do Projeto
 
-
-
-
-Nessa parte do documento sera abordado técnicas e modelos que auxiliam na organização para a fundação da EASYHost.
-
 ## Personas
-
-User Personas
 
 1. Givanildo Barbosa, 38 anos, Gerente de Hotel
  
@@ -22,8 +15,6 @@ Max tem 27 anos e é proprietário de uma pousada que herdou de sua familia. Max
 Larissa tem 32 anos e é responsável por coordenar a equipe de limpeza e manutenção do hotel. Seu trabalho envolve garantir que os quartos estejam sempre prontos e que os serviços de quarto sejam realizados no prazo ou a pedido do hóspede. Larissa precisa de uma ferramenta que permita visualizar facilmente quais quartos precisam de limpeza, quais funcionários estão disponíveis para realizar essa limpeza e de um jeito mais facil de organizar a equipe para trabalhar de forma eficiente.
 
 
-
-
 ## Histórias de Usuários
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                                                                           |PARA ... `MOTIVO/VALOR`                                              |
@@ -35,14 +26,8 @@ Larissa tem 32 anos e é responsável por coordenar a equipe de limpeza e manute
 |Larissa Santos      | Método que permita visualizar os quartos com necessidade de limpeza e alocação de funcionários a esse quarto | Organizar a equipe de forma rápida e prática                        |
 
 
-
-
-
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
-
-*NOSSOS REQUISITOS*
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito               | Prioridade |

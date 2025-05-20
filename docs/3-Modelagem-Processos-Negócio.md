@@ -39,9 +39,6 @@ A implementação do Easy Host eliminará muitas dessas ineficiências ao oferec
 - **Dificuldade de acompanhamento:** Sem um sistema atualizado em tempo real, a tomada de decisão é atrasada ou baseada em informações incompletas.  
 - **Retrabalho nos processos manuais:** Vários formulários, notas e cadernos circulam entre setores, prolongando o tempo de resposta e a chance de falhas.
 
-
-FALTA - Colem aqui os modelos dos processos atuais (modelo AS-IS), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina.
-
 ### 3.2. Descrição geral da proposta (Modelagem TO BE)
 
 Tendo identificado os gargalos dos modelos AS IS, apresentem uma descrição da proposta de solução, buscando maior eficiência com a introdução da tecnologia. Abordem também os limites dessa solução e o seu alinhamento com as estratégias e objetivos do contexto de negócio escolhido. 
