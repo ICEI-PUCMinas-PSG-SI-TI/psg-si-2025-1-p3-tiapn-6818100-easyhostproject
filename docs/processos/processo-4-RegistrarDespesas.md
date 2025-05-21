@@ -4,7 +4,7 @@ O módulo de Registro de Despesas centraliza todos os lançamentos de consumo �
 
 **Modelo de processo (BPMN) - Processo Pagamento:**
 
-![Diagrama - Processo Pagamento](<../images/Diagrama processo 4 - processo de pagamento>)
+![Diagrama - Processo Pagamento](<../images/Diagrama processo 4 - processo de pagamento.png>)
 
 ## Tela 1 – Registrar despesas
 

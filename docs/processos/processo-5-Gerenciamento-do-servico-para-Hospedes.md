@@ -4,7 +4,7 @@ O atendimento começa com o cliente solicitando um serviço por telefone. O aten
 
 **Modelo de processo (BPMN) - Serviço para Hóspedes:**
 
-![Diagrama - Serviço para Hóspedes](<../images/Diagrama processo 5 - Gerenciamento do serviço para Hóspedes>)
+![Diagrama - Serviço para Hóspedes](<../images/Diagrama processo 5 - Gerenciamento do serviço para Hóspedes.png>)
 
 ## Tela 1 – Atendente registra pedido no sistema
 
