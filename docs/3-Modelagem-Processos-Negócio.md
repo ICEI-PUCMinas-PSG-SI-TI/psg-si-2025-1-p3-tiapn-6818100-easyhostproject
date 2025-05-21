@@ -51,15 +51,15 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Gestão de reservas](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
+[PROCESSO 1 - Gestão de reservas](./processos/processo-1-Gestao-de-Reservas.md "Detalhamento do Processo 1.")
 
-[Processo 2 – CHECK IN](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[Processo 2 – CHECK IN](./processos/processo-2-CheckIn.md "Detalhamento do Processo 2.")
 
-[PROCESSO 3 - CHECKOUT](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-3-checkout.md)
+[PROCESSO 3 - CHECKOUT](./processos/processo-3-CheckOut.md "Detalhamento do Processo 2.")
 
-[PROCESSO 4 - Registrar despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-4-nome-do-processo.md)
+[PROCESSO 4 - Registrar despesas](./processos/processo-4-RegistrarDespesas.md")
 
-[PROCESSO 5 - Gerenciamento do serviço para Hóspedes](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-5-Gerenciamento-do-servico-para-Hospedes.md)
+[PROCESSO 5 - Gerenciamento do serviço para Hóspedes](./processos/processo-5-Gerenciamento-do-servico-para-Hospedes.md")
 
-[Processo 6 – Gerenciamento de Serviços Internos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/processo-6-Gerenciamento-de-Servi%C3%A7os-Internos.md)
+[Processo 6 – Gerenciamento de Serviços Internos](./processos/processo-6-Gerenciamento-de-Serviços-Internos.md")
 

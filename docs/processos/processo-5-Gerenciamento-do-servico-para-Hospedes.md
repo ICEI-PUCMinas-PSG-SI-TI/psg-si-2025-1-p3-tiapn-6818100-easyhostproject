@@ -1,14 +1,12 @@
-### 3.3.1 Processo 5 Gerenciamento do serviço para Hóspedes
+### 3.3.5 Processo 5 - Gerenciamento do serviço para Hóspedes
 
 O atendimento começa com o cliente solicitando um serviço por telefone. O atendente registra todas as informações no sistema, associando o pedido ao nome do cliente. Após o registro, o pedido é formalizado e automaticamente direcionado para os setores responsáveis pela execução do serviço, dando início ao processo interno de atendimento. 
 
-**Modelo de processo (BPMN) - :**
+**Modelo de processo (BPMN) - Serviço para Hóspedes:**
 
+![Diagrama - Serviço para Hóspedes](<../images/Diagrama processo 5 - Gerenciamento do serviço para Hóspedes>)
 
-
-![Modelo BPMN do PROCESSO 5](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%205%20-%20Gerenciamento%20do%20servi%C3%A7o%20para%20H%C3%B3spedes.png)
-
-**Atendente registra pedido no sistema**
+## Tela 1 – Atendente registra pedido no sistema
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -23,7 +21,7 @@ O atendimento começa com o cliente solicitando um serviço por telefone. O aten
 | registrar | Pedido enviado a central  | default |
 | cancelar | fim do processo  | cancel |
 
-**Pedido enviado à central de serviços internos**
+## Tela 2 – Pedido enviado à central de serviços internos
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
