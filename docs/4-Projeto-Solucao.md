@@ -54,7 +54,7 @@ Organizamos o sistema dessa forma para facilitar futuras melhorias, como adicion
 
 ## Diagrama de Classes
 
- ![UML](<../images/UML-EASYHost.png>)
+ ![UML](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/UML-EASYHost.png)
 
 ## Modelo ER
 
