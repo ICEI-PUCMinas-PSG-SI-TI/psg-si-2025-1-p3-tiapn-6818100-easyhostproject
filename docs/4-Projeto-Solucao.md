@@ -54,11 +54,9 @@ Organizamos o sistema dessa forma para facilitar futuras melhorias, como adicion
 
 ## Diagrama de Classes
 
- ![UML](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/UML-EASYHost.png)
+ ![UML](<../images/UML-EASYHost.png>)
 
 ## Modelo ER
-
-
 
 
 ### 4.3. Modelo de dados
@@ -78,69 +76,143 @@ Organizamos o sistema dessa forma para facilitar futuras melhorias, como adicion
 
 #### 4.3.3 Modelo Físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
+Script de criação das tabelas do banco de dados.
 
 <code>
 
- -- Criação da tabela Médico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+CREATE DATABASE EasyHostBd;
+USE EasyHostBd;
+
+----------------------------------------
+-- 1) Lookup tables de enumerações
+----------------------------------------
+
+CREATE TABLE TipoUsuario (
+  tipoUsuarioId        INT IDENTITY(1,1) PRIMARY KEY,
+  descricao      NVARCHAR(20)  NOT NULL
 );
 
-
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+CREATE TABLE StatusReserva (
+  statusReservaId INT IDENTITY(1,1) PRIMARY KEY,
+  descricao       NVARCHAR(20) NOT NULL
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
+CREATE TABLE StatusServico (
+  statusServicoId INT IDENTITY(1,1) PRIMARY KEY,
+  descricao       NVARCHAR(50) NOT NULL
 );
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
+INSERT INTO TipoUsuario (descricao) VALUES
+  ('Funcionario'),
+  ('Administrador');
+
+INSERT INTO StatusReserva (descricao) VALUES
+  ('Reservada'),
+  ('Confirmada'),
+  ('Em Andamento'),
+  ('Concluida'),
+  ('Cancelada');
+
+INSERT INTO StatusServico (descricao) VALUES
+  ('Pendente'),
+  ('Em Andamento'),
+  ('Concluido'),
+  ('Cancelado');
+
+
+----------------------------------------
+-- 2) Tabela principal de hotéis
+----------------------------------------
+CREATE TABLE Hotel (
+  id             INT IDENTITY(1,1) PRIMARY KEY,
+  nomeHotel      NVARCHAR(255) NOT NULL
 );
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
+----------------------------------------
+-- 3) Usuários (apenas FK para hotel)
+----------------------------------------
+CREATE TABLE Usuario (
+  id             INT IDENTITY(1,1) PRIMARY KEY,
+  nome		     NVARCHAR(100) NOT NULL,
+  cpf            CHAR(11)      NOT NULL UNIQUE,
+  salario        DECIMAL(10,2) NOT NULL,
+  ativo          BIT NOT NULL DEFAULT(1),
+  TipoUsuario    INT NOT NULL REFERENCES TipoUsuario(tipoUsuarioId) ON DELETE NO ACTION,
+  hotelIdFk      INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
 );
+
+----------------------------------------
+-- 4) log de alterações
+----------------------------------------
+CREATE TABLE Alteracoes (
+  id             INT IDENTITY(1,1) PRIMARY KEY,
+  usuarioIdFk    INT NULL REFERENCES Usuario(id) ON DELETE SET NULL,
+  dataHora       DATETIME2   NOT NULL DEFAULT SYSUTCDATETIME(),
+  descricao      NVARCHAR(100) NOT NULL,
+  detalhes       NVARCHAR(MAX) NULL
+);
+
+----------------------------------------
+-- 5) Hóspedes
+----------------------------------------
+CREATE TABLE Hospede (
+  id             INT IDENTITY(1,1) PRIMARY KEY,
+  nome           NVARCHAR(255) NOT NULL,
+  cpf            CHAR(11) NOT NULL UNIQUE,
+  hotelIdFk      INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
+);
+
+----------------------------------------
+-- 6) Quartos
+----------------------------------------
+CREATE TABLE Quarto (
+  id               INT IDENTITY(1,1) PRIMARY KEY,
+  numQuarto        INT NOT NULL,
+  numCamasSolteiro INT NOT NULL DEFAULT(0),
+  numCamasCasal    INT NOT NULL DEFAULT(0),
+  maxPessoas       INT NOT NULL DEFAULT(1),
+  adicionais       NVARCHAR(MAX) NULL,
+  hotelIdFk        INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
+  );
+
+----------------------------------------
+-- 7) Reservas
+----------------------------------------
+CREATE TABLE Reserva (
+  id                 INT IDENTITY(1,1) PRIMARY KEY,
+  hospedeIdFk        INT NULL REFERENCES Hospede(id) ON DELETE CASCADE,
+  quartoIdFk         INT NOT NULL REFERENCES Quarto(id) ON DELETE CASCADE,
+  dataEntrada        DATE NOT NULL,
+  dataSaida          DATE NOT NULL,
+  statusReservaIdFk  INT NOT NULL DEFAULT 1 REFERENCES StatusReserva(statusReservaId) ON DELETE NO ACTION,
+);
+
+----------------------------------------
+-- 8) Serviços vinculados a reserva
+----------------------------------------
+CREATE TABLE Servico (
+  id                     INT IDENTITY(1,1) PRIMARY KEY,
+  funcionarioResponsavel NVARCHAR(100) NOT NULL,
+  descricao              NVARCHAR(MAX) NULL,
+  statusServicoIdFk      INT NOT NULL DEFAULT 1 REFERENCES StatusServico(statusServicoId) ON DELETE NO ACTION,
+  criadoEm               DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME(),
+  concluidoEm            DATETIME2 NULL,
+  reservaIdFk            INT NOT NULL REFERENCES Reserva(id) ON DELETE CASCADE
+);
+
 
 </code>
 
-Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
-
-
-
-
 ### 4.4. Tecnologias
 
-_Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas._
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+![Representação Integração Usuario Com Sistema](<../images/Interacao_User_System.png>)
 
 
-| **Dimensão**   | **Tecnologia**  |
-| ---            | ---             |
-| SGBD           | SQL SERVER           |
-| Front end      | React Framework     |
-| Back end       | .NET |
-| Deploy         | Github Pages    |
+|**Dimensão**     | **Tecnologia**  |
+| --------------- | --------------- |
+| SGBD            | SQL Server      |
+| Front end       | React Framework |
+| Back end        | .NET            |
+| Deploy          | GitHub Pages    |
+| Containerização | Docker          |
 
