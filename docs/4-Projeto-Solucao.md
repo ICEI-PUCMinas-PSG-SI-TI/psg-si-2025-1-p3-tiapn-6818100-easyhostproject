@@ -205,7 +205,7 @@ CREATE TABLE Servico (
 
 ### 4.4. Tecnologias
 
-![Representação Integração Usuario Com Sistema](<../images/Interacao_User_System.png>)
+![Representação Integração Usuario Com Sistema](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Interacao_User_System.png)
 
 
 |**Dimensão**     | **Tecnologia**  |
