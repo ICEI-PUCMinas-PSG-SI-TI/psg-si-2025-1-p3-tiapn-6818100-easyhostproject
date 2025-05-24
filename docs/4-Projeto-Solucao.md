@@ -70,7 +70,7 @@ Organizamos o sistema dessa forma para facilitar futuras melhorias, como adicion
 #### 4.3.2 Esquema Relacional
 
 
-![Exemplo de um modelo relacional](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Modelo%20Relacional.jpeg)
+![Exemplo de um modelo relacional](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Esquema%20relacional.png)
 ---
 
 
