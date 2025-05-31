@@ -55,11 +55,11 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 
 [Processo 2 – CHECK IN](./processos/processo-2-CheckIn.md "Detalhamento do Processo 2.")
 
-[PROCESSO 3 - CHECKOUT](./processos/processo-3-CheckOut.md "Detalhamento do Processo 2.")
+[PROCESSO 3 - CHECKOUT](./processos/processo-3-checkout.md "Detalhamento do Processo 2.")
 
-[PROCESSO 4 - Registrar despesas](./processos/processo-4-RegistrarDespesas.md")
+[PROCESSO 4 - Registrar despesas](./processos/processo-4-RegistrarDespesas.md)
 
-[PROCESSO 5 - Gerenciamento do serviço para Hóspedes](./processos/processo-5-Gerenciamento-do-servico-para-Hospedes.md")
+[PROCESSO 5 - Gerenciamento do serviço para Hóspedes](./processos/processo-5-Gerenciamento-do-servico-para-Hospedes.md)
 
-[Processo 6 – Gerenciamento de Serviços Internos](./processos/processo-6-Gerenciamento-de-Serviços-Internos.md")
+[Processo 6 – Gerenciamento de Serviços Internos](./processos/processo-6-Gerenciamento-de-Serviços-Internos.md)
 
