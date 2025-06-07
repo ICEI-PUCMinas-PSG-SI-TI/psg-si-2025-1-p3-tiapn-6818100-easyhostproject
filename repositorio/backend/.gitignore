@@ -1,0 +1,87 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Package management
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Logs
+*.log
+
+# dotnet artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Others
+*.vspscc
+*.vssscc
+*.orig
+
+# Visual Studio
+.vs/
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+
+# Publish results
+publish/
+*.dbmdl
+
+# Entity Framework
+Migrations/
+
+# dotenv
+.env
+.env.*
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Tye
+.tye/
+
+# JetBrains Rider logs
+.idea/
+
+# Secrets
+secrets.json
+
+# npm (caso use front-end junto)
+node_modules/
+
+# Angular ou React build (se for fullstack)
+dist/
+build/
+
+# Docker volumes/cache (opcional)
+**/.docker/

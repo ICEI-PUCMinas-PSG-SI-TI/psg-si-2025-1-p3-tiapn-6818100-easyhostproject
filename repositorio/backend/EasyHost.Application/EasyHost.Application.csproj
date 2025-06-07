@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyHost.Domain\EasyHost.Domain.csproj" />
+    <ProjectReference Include="..\EasyHost.Infrastructure\EasyHost.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Request\" />
+    <Folder Include="DTOs\Response\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+  </ItemGroup>
+
+</Project>

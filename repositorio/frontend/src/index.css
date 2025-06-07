@@ -1,0 +1,64 @@
+body {
+  font-family: var(--font-base);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+button, .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+button:hover, .btn:hover {
+  background-color: #357abd;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color var(--transition);
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}

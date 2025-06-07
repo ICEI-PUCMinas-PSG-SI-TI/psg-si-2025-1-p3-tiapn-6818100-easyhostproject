@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|c:\\users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\easyhost.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|solutionrelative:easyhost.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|c:\\users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\easyhost.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|solutionrelative:easyhost.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|c:\\users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\easyhost.api\\easyhost.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|solutionrelative:easyhost.api\\easyhost.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2FD015B-A5AA-4557-82BF-40DF422B9E63}|EasyHost.Application\\EasyHost.Application.csproj|c:\\users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\easyhost.application\\easyhost.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E2FD015B-A5AA-4557-82BF-40DF422B9E63}|EasyHost.Application\\EasyHost.Application.csproj|solutionrelative:easyhost.application\\easyhost.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|c:\\users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\easyhost.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|solutionrelative:easyhost.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFD97A0-8CDF-4D12-A172-FD3190804A96}|EasyHost.Domain\\EasyHost.Domain.csproj|c:\\users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\easyhost.domain\\easyhost.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7DFD97A0-8CDF-4D12-A172-FD3190804A96}|EasyHost.Domain\\EasyHost.Domain.csproj|solutionrelative:easyhost.domain\\easyhost.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|c:\\users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\easyhost.api\\controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A0EA6A-9088-4E7D-A7D7-D9DDAADCB2A2}|EasyHost.Api\\EasyHost.Api.csproj|solutionrelative:easyhost.api\\controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "EasyHost.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\appsettings.json",
+              "RelativeToolTip": "EasyHost.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-06T21:45:16.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "EasyHost.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\appsettings.Development.json",
+              "RelativeToolTip": "EasyHost.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-06T21:45:15.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EasyHost.Api",
+              "DocumentMoniker": "C:\\Users\\thiag\\Source\\Repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\EasyHost.Api.csproj",
+              "RelativeDocumentMoniker": "EasyHost.Api\\EasyHost.Api.csproj",
+              "ToolTip": "C:\\Users\\thiag\\Source\\Repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\EasyHost.Api.csproj",
+              "RelativeToolTip": "EasyHost.Api\\EasyHost.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-06T21:41:51.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EasyHost.Domain",
+              "DocumentMoniker": "C:\\Users\\thiag\\Source\\Repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Domain\\EasyHost.Domain.csproj",
+              "RelativeDocumentMoniker": "EasyHost.Domain\\EasyHost.Domain.csproj",
+              "ToolTip": "C:\\Users\\thiag\\Source\\Repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Domain\\EasyHost.Domain.csproj",
+              "RelativeToolTip": "EasyHost.Domain\\EasyHost.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-06T21:37:56.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\Program.cs",
+              "RelativeDocumentMoniker": "EasyHost.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\Program.cs",
+              "RelativeToolTip": "EasyHost.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T21:34:32.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HotelController.cs",
+              "DocumentMoniker": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\Controllers\\HotelController.cs",
+              "RelativeDocumentMoniker": "EasyHost.Api\\Controllers\\HotelController.cs",
+              "ToolTip": "C:\\Users\\thiag\\source\\repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Api\\Controllers\\HotelController.cs",
+              "RelativeToolTip": "EasyHost.Api\\Controllers\\HotelController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T21:34:29.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EasyHost.Application",
+              "DocumentMoniker": "C:\\Users\\thiag\\Source\\Repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Application\\EasyHost.Application.csproj",
+              "RelativeDocumentMoniker": "EasyHost.Application\\EasyHost.Application.csproj",
+              "ToolTip": "C:\\Users\\thiag\\Source\\Repos\\psg-si-2025-1-p3-tiapn-6818100-easyhostproject\\EasyHost.Application\\EasyHost.Application.csproj",
+              "RelativeToolTip": "EasyHost.Application\\EasyHost.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-06T21:34:22.618Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
