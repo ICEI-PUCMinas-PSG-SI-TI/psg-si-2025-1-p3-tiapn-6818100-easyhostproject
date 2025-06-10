@@ -8,5 +8,29 @@ namespace EasyHost.Domain.Entities
 {
     public class Alteracoes
     {
+        private Guid _id;
+        private Guid _usuarioId;
+        private DateTime _dataAlteracao;
+        private string _descricao;
+        private string? _detalhes;
+
+        public Alteracoes(Guid id, Guid usuarioId, DateTime dataAlteracao, string descricao, string? detalhes)
+        {
+            //CONSTRUTOR PADRÃO POR ENQUANTO
+            _id = id;
+            _usuarioId = usuarioId;
+            _detalhes = detalhes;
+            _descricao = descricao;
+            _detalhes = detalhes;
+        }
+
+        public void MudarDescricao(string descricao)
+        {
+            //POSSIVEL EXCEÇÃO
+            //if (descricao.Count() <= 0)
+            //    throw new ArgumentException("Descrição inválida");
+
+            _descricao = descricao;
+        }
     }
 }
