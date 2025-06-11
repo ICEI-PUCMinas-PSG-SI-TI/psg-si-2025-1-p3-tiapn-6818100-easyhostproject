@@ -8,7 +8,7 @@ namespace EasyHost.Domain.Entities
 {
     public class Quarto
     {
-        private static int id = 1;
+        private Guid id;
         private int numQuarto;
         private int numCamasSolteiro;
         private int numCamasCasal;
@@ -42,6 +42,7 @@ namespace EasyHost.Domain.Entities
             if (hotelId <= 0)
                 throw new ArgumentException("O ID do hotel deve ser valido.");
 
+            this.id = Guid.NewGuid();
             this.numQuarto = numQuarto;
             this.numCamasSolteiro = numCamasSolteiro;
             this.numCamasCasal = numCamasCasal;
@@ -98,7 +99,7 @@ namespace EasyHost.Domain.Entities
         }
 
         //Gets dos atributos!!!
-        public int QuartoId
+        public Guid QuartoId
         {
             get { return id; }
         }

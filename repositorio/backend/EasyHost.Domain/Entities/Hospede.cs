@@ -8,7 +8,7 @@ namespace EasyHost.Domain.Entities
 {
     public class Hospede
     {
-        private static int id;
+        private Guid id;
         private string nome;
         private string cpf;
         private int hotelId;
@@ -21,7 +21,8 @@ namespace EasyHost.Domain.Entities
         /// <exception cref="ArgumentException">Caso entrda seja válida</exception>
         public Hospede(string nome, string cpf, int hotelId)
         {
-            if(nome == null)
+            this.id = Guid.NewGuid();
+            if (nome == null)
                 throw new ArgumentException ("Nome precisa ser válido");
             if (hotelId <= 0)
                 throw new ArgumentException("Hotel id não pode ser 0");
