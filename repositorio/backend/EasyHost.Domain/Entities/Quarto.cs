@@ -14,7 +14,7 @@ namespace EasyHost.Domain.Entities
         private int numCamasCasal;
         private int maximoPessoas;
         List<string> adicionais;
-        private int hotelId;
+        private Guid hotelId;
 
         /// <summary>
         /// Método construtor para a classe quarto com tratamento para valores inválidos
@@ -25,7 +25,7 @@ namespace EasyHost.Domain.Entities
         /// <param name="maximoPessoas">Numero máximo de hospedes que podem ser alocados no quarto</param>
         /// <param name="hotelId">ID do hotel para qual o quarto pertence</param>
 
-        public Quarto(int numQuarto, int numCamasSolteiro, int numCamasCasal, int maximoPessoas, int hotelId)
+        public Quarto(int numQuarto, int numCamasSolteiro, int numCamasCasal, int maximoPessoas, Guid hotelId)
         {
             if (numQuarto <= 0)
                 throw new ArgumentException("O número do quarto deve ser maior que zero.");
@@ -38,9 +38,6 @@ namespace EasyHost.Domain.Entities
 
             if (maximoPessoas < (numCamasSolteiro + (numCamasCasal * 2)))
                 throw new ArgumentException("O número máximo de pessoas não pode ser menor que a capacidade total das camas.");
-
-            if (hotelId <= 0)
-                throw new ArgumentException("O ID do hotel deve ser valido.");
 
             this.id = Guid.NewGuid();
             this.numQuarto = numQuarto;
@@ -123,7 +120,7 @@ namespace EasyHost.Domain.Entities
             get { return maximoPessoas; }
         }
 
-        public int HotelId
+        public Guid HotelId
         {
             get { return hotelId; }
         }

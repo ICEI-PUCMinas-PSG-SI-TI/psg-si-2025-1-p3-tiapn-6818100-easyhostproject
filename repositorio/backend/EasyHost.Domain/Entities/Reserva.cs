@@ -5,14 +5,14 @@ namespace EasyHost.Domain.Entities
     public class Reserva
     {
         private Guid _id;
-        private int _hospedeId;
-        private int _quartoId;
+        private Guid _hospedeId;
+        private Guid _quartoId;
         private DateOnly _dataEntrada;
         private DateOnly _dataSaida;
         private StatusReserva _statusReserva;
         private List<Servico> _servicos = new();
 
-        public Reserva(int hospedeId, int quartoId, DateOnly dataEntrada, DateOnly dataSaida)
+        public Reserva(Guid hospedeId, Guid quartoId, DateOnly dataEntrada, DateOnly dataSaida)
         {
             if (dataEntrada >= dataSaida)
                 throw new ArgumentException("Data de entrada deve ser anterior à data de saída");

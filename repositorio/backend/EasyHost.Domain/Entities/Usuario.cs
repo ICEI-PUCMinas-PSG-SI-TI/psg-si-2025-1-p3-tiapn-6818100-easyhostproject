@@ -15,18 +15,19 @@ namespace EasyHost.Domain.Entities
         private decimal _salario;
         private bool _ativo;
         private TipoUsuario _tipoUsuario;
-        private int _hotelId;
+        private Guid _hotelId;
+        private string _senha;
 
-        public Usuario(Guid id, string nome, string cpf, decimal salario, bool ativo, TipoUsuario tipoUsuario, int hotelId)
+        public Usuario(string nome, string cpf, decimal salario, bool ativo, TipoUsuario tipoUsuario, Guid hotelId, string senha)
         {
-            //CONSTRUTOR PADRÃO POR ENQUANTO
-            _id = id;
+            _id = Guid.NewGuid();
             _nome = nome;
             _cpf = cpf;
             _salario = salario;
             _ativo = ativo;
             _tipoUsuario = tipoUsuario;
             _hotelId = hotelId;
+            _senha = senha;
         }
 
         public void EditarUsuario(string nome, decimal salario, TipoUsuario tipoUsuario)
@@ -36,7 +37,7 @@ namespace EasyHost.Domain.Entities
             //    throw new ArgumentException("Nome inválido");
             //if (salario <= 0)
             //    throw new ArgumentException("Salário inválido");
-           
+
 
             _nome = nome;
             _salario = salario;
@@ -51,6 +52,15 @@ namespace EasyHost.Domain.Entities
         public void MudarStatusUsuario(bool ativo)
         {
             _ativo = ativo;
+        }
+
+
+        public void AlterarSenha(string novaSenha)
+        {
+            if (string.IsNullOrWhiteSpace(novaSenha))
+                throw new ArgumentException("Senha não pode ser vazia");
+
+            _senha = novaSenha;
         }
     }
 }

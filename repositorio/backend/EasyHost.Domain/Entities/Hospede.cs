@@ -11,7 +11,7 @@ namespace EasyHost.Domain.Entities
         private Guid id;
         private string nome;
         private string cpf;
-        private int hotelId;
+        private Guid hotelId;
         /// <summary>
         /// Construtor para a classe hospede com trataamento de exceções 
         /// </summary>
@@ -19,13 +19,11 @@ namespace EasyHost.Domain.Entities
         /// <param name="cpf">Cpf</param>
         /// <param name="hotelId">id do hotel</param>
         /// <exception cref="ArgumentException">Caso entrda seja válida</exception>
-        public Hospede(string nome, string cpf, int hotelId)
+        public Hospede(string nome, string cpf, Guid hotelId)
         {
             this.id = Guid.NewGuid();
             if (nome == null)
                 throw new ArgumentException ("Nome precisa ser válido");
-            if (hotelId <= 0)
-                throw new ArgumentException("Hotel id não pode ser 0");
             if (cpf == null && cpf.Length < 11)
                 throw new ArgumentException("CPF precisa ser válido");
             this.hotelId = hotelId;

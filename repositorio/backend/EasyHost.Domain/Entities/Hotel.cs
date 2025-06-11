@@ -12,11 +12,5 @@ namespace EasyHost.Domain.Entities
         public string NomeHotel { get; private set; }
 
         public Hotel() { }
-
-        public Hotel(Guid id, string nomeHotel)
-        {
-            Id = id;
-            NomeHotel = nomeHotel;
-        }
     }
 }

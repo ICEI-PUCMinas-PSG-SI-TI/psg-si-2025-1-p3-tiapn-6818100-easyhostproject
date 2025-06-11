@@ -10,14 +10,14 @@ namespace EasyHost.Domain.Entities
     public class Servico
     {
         private Guid _id;
-        private int _reservaId;
+        private Guid _reservaId;
         private string _funcionarioResponsavel;
         private string _descricao;
         private StatusServico _statusServico;
         private DateTime _criadoEm;
         private DateTime? _concluidoEm;
 
-        public Servico(int reservaId, string funcionarioResponsavel, string descricao)
+        public Servico(Guid reservaId, string funcionarioResponsavel, string descricao)
         {
             _id = Guid.NewGuid();
             _reservaId = reservaId;
