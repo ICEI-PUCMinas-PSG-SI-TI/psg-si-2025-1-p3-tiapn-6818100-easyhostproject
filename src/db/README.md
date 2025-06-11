@@ -8,14 +8,7 @@ SQL Server 2022 **Developer** já com o banco **EasyHostBd** criado e populado.
 
 ---
 
-## Antes de rodar o backend, o container do SQL Server tem que está rodando:
-
-Para inciiar é so rodar o comando abaixo ou dar run no painel do docker mesmo
-
-` docker start easyHostDb` 
-
 ## 1 Baixar a imagem
-# Quando mudar a tag porque alguem fez push, entao muda o comando abaixo para a ultima tag, consegue verificar isso no link "https://hub.docker.com/repository/docker/tvillani11/easyhostdb/general"
 
 `docker pull tvillani11/easyhostdb:1.2`
 
@@ -28,12 +21,18 @@ Para inciiar é so rodar o comando abaixo ou dar run no painel do docker mesmo
 
 Preencha os campos:
 
-Connection type: Microsoft SQL Server
-Imput Type: Param
-Server:	localhost
-Authentication type: SQL Login
-User name: sa
-Password: EasyHost123
+**Connection type:** Microsoft SQL Server
+
+**Input Type:** Param
+
+**Server:** localhost
+
+**Authentication type:** SQL Login
+
+**User name:** sa
+
+**Password:** EasyHost123
+
 
 Após preenchido clieque em 'Connect' e depois no botão 'Trust server' que aparecera depois do load.
 
