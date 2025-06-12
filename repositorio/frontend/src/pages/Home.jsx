@@ -1,23 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import Header from '../pages/componente/Header.jsx';
-import api from '../services/api';
+import React, { useEffect, useState } from 'react'
+import { jwtDecode } from 'jwt-decode'
+import Header from './componente/Header'
+import { Container } from 'react-bootstrap'
 
 export default function Home() {
-  const [message, setMessage] = useState('');
+  const [userName, setUserName] = useState('')
 
   useEffect(() => {
-    api.get('/hotel/run')
-      .then(res => setMessage(res.data))
-      .catch(() => setMessage('Erro ao conectar à API'));
-  }, []);
+    const token = localStorage.getItem('token')
+    if (token) {
+      try {
+        const decoded = jwtDecode(token)
+        setUserName(decoded.nome || '')
+      } catch (err) {
+        console.error('Erro ao decodificar token:', err)
+      }
+    }
+  }, [])
 
   return (
     <>
-      <Header/>
-      <div className="container mt-5">
-        <h1>Olá EasyHost</h1>
-        {message && <p>API respondeu: {message}</p>}
-      </div>
+      <Header />
+      <Container className="mt-5">
+        {userName ? (
+          <h1>Olá, {userName}</h1>
+        ) : (
+          <h1>Bem-vindo(a) ao EasyHost</h1>
+        )}
+      </Container>
     </>
-  );
+  )
 }

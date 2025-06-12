@@ -1,34 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import { Navbar, Container, Image } from 'react-bootstrap';
-import api from '../../services/api';
+import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 import logo from '../../images/logo.png';
+import { FaUser } from "react-icons/fa";
 
 export default function Header() {
-  const [hotelName, setHotelName] = useState('EasyHost');
-
-  useEffect(() => {
-    api.get('/hotel/GetAll')
-      .then(res => setHotelName(res.data[0].nomeHotel))
-      .catch(() => setHotelName('Erro ao carregar hotel'));
-  }, []);
-
   return (
-    <Navbar bg="secondary">
-
-       <Navbar.Brand href="/" className='px-5'>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      variant="dark"
+      sticky="top"
+      className="shadow-sm"
+      style={{
+        backgroundColor: 'rgba(0, 0, 0, 0.15)',
+        height: '90px',
+        padding: '0 1rem'
+      }}
+    >
+      <Container>
+        <Navbar.Brand href="/">
           <Image
             src={logo}
+            height={130}
+            className="d-inline-block align-top"
             alt="Logo"
-            width={120}
-            height={100}
-            className="d-inline-block align-top me-2"
           />
         </Navbar.Brand>
-
-      <Container>
-        <Navbar.Text className="ms-auto text-white">
-          {hotelName}
-        </Navbar.Text>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto ">
+            <Nav.Link className='text-dark' href="/">Home</Nav.Link>
+            <Nav.Link className='text-dark' href="/cadastrar">Cadastrar</Nav.Link>
+            <Nav.Link className='text-dark' href="/login">  <FaUser size={20} /></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

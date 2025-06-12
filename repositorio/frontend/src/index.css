@@ -45,7 +45,7 @@ button, .btn {
   transition: background-color var(--transition);
 }
 button:hover, .btn:hover {
-  background-color: #357abd;
+
 }
 
 input, textarea, select {
@@ -61,4 +61,9 @@ input, textarea, select {
 input:focus, textarea:focus, select:focus {
   border-color: var(--color-primary);
   outline: none;
+}
+
+.placeholder-white::placeholder {
+  color: #fff !important;
+  opacity: 1;
 }

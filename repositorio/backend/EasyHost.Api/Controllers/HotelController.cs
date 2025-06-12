@@ -8,12 +8,10 @@ namespace EasyHost.Api.Controllers
     [Route("[controller]")]
     public class HotelController : ControllerBase
     {
-        private readonly ILogger<HotelController> _logger;
         private readonly IHotelService _hotelService;
 
-        public HotelController(ILogger<HotelController> logger, IHotelService hotelService)
+        public HotelController(IHotelService hotelService)
         {
-            _logger = logger;
             _hotelService = hotelService;
         }
 

@@ -1,8 +1,10 @@
 using EasyHost.Application.Interfaces;
 using EasyHost.Application.Services;
+using EasyHost.Domain.Entities;
 using EasyHost.Domain.Interfaces;
 using EasyHost.Infrastructure.Data;
 using EasyHost.Infrastructure.Repositorys;
+using Microsoft.AspNetCore.Identity;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,11 +33,14 @@ builder.Services.AddCors(options =>
     });
 });
 
-
-//quando incluir interfaces e classe insira a linha abaixo, injenção de dependencia o .net entendi e passa os parametros nescessario para as classe
+//quando incluir interfaces e classe insira a linha abaixo, injenï¿½ï¿½o de dependencia o .net entende e passa os parametros nescessario para as classe
 builder.Services.AddScoped<IDataConnection, DataConnection>();
 builder.Services.AddScoped<IHotelRepository, HotelRepository>();
 builder.Services.AddScoped<IHotelService, HotelService>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<IPasswordHasher<Usuario>, PasswordHasher<Usuario>>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 
 var app = builder.Build();

@@ -1,36 +1,35 @@
 ﻿using EasyHost.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EasyHost.Domain.Entities
 {
     public class Usuario
     {
-        private Guid _id;
-        private string _nome;
-        private string _cpf;
-        private decimal _salario;
-        private bool _ativo;
-        private TipoUsuario _tipoUsuario;
-        private Guid _hotelId;
-        private string _senha;
+        public Guid _id { get; private set;}
+        public string _nome { get; private set; }
+        public string _cpf { get; private set;}
+        public decimal _salario { get; private set; }
+        public bool _ativo { get; private set; }
+        public TipoUsuario _tipoUsuario { get; private set; }
+        public Guid _hotelId { get; private set; }
+        public string _email { get; private set; }
+        public string _senha { get; private set; }
 
-        public Usuario(string nome, string cpf, decimal salario, bool ativo, TipoUsuario tipoUsuario, Guid hotelId, string senha)
+        public Usuario(string nome, string cpf, decimal salario, TipoUsuario tipoUsuario, Guid hotelId, string email, string senha)
         {
             _id = Guid.NewGuid();
             _nome = nome;
             _cpf = cpf;
             _salario = salario;
-            _ativo = ativo;
+            _ativo = true;
             _tipoUsuario = tipoUsuario;
             _hotelId = hotelId;
+            _email = email;
             _senha = senha;
         }
 
-        public void EditarUsuario(string nome, decimal salario, TipoUsuario tipoUsuario)
+        public Usuario() { }
+
+        public void AtualizarUsuario(string nome, decimal salario, TipoUsuario tipoUsuario, bool ativo)
         {
             //POSSIVEIS EXCEÇÕES
             //if (nome.Count() <= 0)
@@ -42,18 +41,13 @@ namespace EasyHost.Domain.Entities
             _nome = nome;
             _salario = salario;
             _tipoUsuario = tipoUsuario;
+            _ativo = ativo;
         }
 
         public TipoUsuario GetTipoUsuario()
         {
             return _tipoUsuario;
         }
-
-        public void MudarStatusUsuario(bool ativo)
-        {
-            _ativo = ativo;
-        }
-
 
         public void AlterarSenha(string novaSenha)
         {
