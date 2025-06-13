@@ -22,7 +22,7 @@ Larissa tem 32 anos e é responsável por coordenar a equipe de limpeza e manute
 |Givanildo Barbosa   | Gerenciamento de alocação de quartos                                                                         | Reduzir tempo gasto manualmente e melhorar a eficiência do hotel    |
 |Givanildo Barbosa   | Gerenciamento de serviço de quarto                                                                           | Reduzir tempo gasto manualmente e melhorar a eficiência do hotel    |
 |Max Verstappen      | Ferramenta para garantir boa gestão da equipe                                                                | Acompanhar as equipes e custos oepracionais do hotel com eficiência |
-|Max Verstappen      | Ferramenta para visualizar a folha de pagamento de forma mais prática                                        | Acompanhar as equipes e custos oepracionais do hotel com eficiência |
+|Max Verstappen      | Ferramenta para visualizar faturamento de hóspedes de forma mais prática                                     | Manusear os pagamentos de hóspedes com mais confiabilidade          |
 |Larissa Santos      | Método que permita visualizar os quartos com necessidade de limpeza e alocação de funcionários a esse quarto | Organizar a equipe de forma rápida e prática                        |
 
 
