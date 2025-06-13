@@ -8,15 +8,27 @@
 
 ### Sprint 1
 - _Scrum master_: Bruno
-- Protótipos: Guilherme
+- Documentação: Guilherme
 - Testes: Thiago
 - Documentação: Gabriel
 
 ### Sprint 2
 - _Scrum master_: Bruno
-- Desenvolvedor _front-end_: Guilherme
-- Desenvolvedor _back-end_: Thiago
-- Testes: Gabriel
+- Documentação: Guilherme
+- Documentação: Thiago
+- Documentação: Gabriel
+
+### Sprint 3
+- _Scrum master_: Bruno
+- Protótipos: Guilherme
+- Documentação BD: Thiago
+- Documentação Tecnologias: Gabriel
+
+### Sprint 4
+- _Scrum master_: Guilherme
+- Desenvolvedor _FrontEnd_: Bruno
+- Desenvolvedor _BackEnd_: Thiago
+- Desenvolvedor _BackEnd_: Gabriel
 
 ## 5.1. Quadro de tarefas
 
@@ -40,7 +52,7 @@ Atualizado em: 11/04/2024
 
 | Responsável | Tarefa/Requisito                       | Iniciado em | Prazo      | Status | Terminado em |
 | :----       |    :----                               |      :----: | :----:     | :----: | :----:       |
-| Thiago     | Descrição Modelagem AS IS	 | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
+| Thiago     | Descrição Modelagem AS IS	             | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Gabriel     | Cadastro de hotel para gerenciamento	 | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Gabriel     | Alocação de hóspedes em quartos		     | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
 | Guilherme   | Menu de serviços de quartos		         | 17/03/2025  | 21/03/2025 | ✔️    | 20/03/2025   |
@@ -57,10 +69,27 @@ Atualizado em: 11/04/2024
 
 ## Sprint 3
 
-Atualizado em: 11/04/2024
+Atualizado em: 13/06/2024
 
 | Responsável | Tarefa/Requisito                       | Iniciado em | Prazo      | Status | Terminado em |
 | :----       |    :----                               |      :----: | :----:     | :----: | :----:       |
+| Thiago      |    Projeto da Solução                  |      07/04  | 11/04      | ✔️     | 10/04       |
+| Guilherme   |    Protótipos de telas                 |      06/04  | 11/04      | ✔️     | 10/04       |
+| Gabriel     |    Modelo de Dados                     |      06/04  | 11/04      | ✔️     | 10/04       |
+| Bruno       |    Tecnologias                         |      06/04  | 11/04      | ✔️     | 09/04       |
+
+## Sprint 4
+
+Atualizado em: 13/06/2024
+
+| Responsável | Tarefa/Requisito                       | Iniciado em | Prazo      | Status | Terminado em |
+| :----       |    :----                               |      :----: | :----:     | :----: | :----:       |
+| Thiago      |    Telas do Processo - BD              |      29/05  | 13/06      | 📝     |        |
+| Guilherme   |    Telas do Processo - Classes         |      29/05  | 23/05      | ✔️     | 04/06       |
+| Gabriel     |    Telas do Processo - Classes         |      29/05  | 23/05      | ✔️     | 04/06      |
+| Thiago      |    Telas do Processo - Classes         |      29/05  | 23/05      | ✔️     | 04/06      |
+| Thiago      |    Telas do Processo - BackEnd         |      29/05  | 23/05      | 📝     |      |
+| Bruno       |    Telas do Processo - FrontEnd        |      06/04  | 23/05      | 📝     |        |
 
 Legenda:
 - ✔️: terminado
