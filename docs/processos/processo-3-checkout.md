@@ -4,7 +4,7 @@ O processo de checkout tem como objetivo tornar a finalização da estadia mais 
 
 **Modelo de processo (BPMN) - Check Out:**
 
-![Diagrama - Ckeck Out](<../images/Diagrama processo 3 - Check out.png>)
+![Diagrama - Ckeck Out](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%203%20-%20CHECKOUT.png)
 
 ## Tela 1 – Acessar Sistema
 
