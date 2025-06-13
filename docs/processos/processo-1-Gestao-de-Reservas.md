@@ -4,7 +4,7 @@ O processo de gerenciamento de reservas tem como objetivo tornar as operações 
 
 **Modelo de processo (BPMN) - Gerência de reservas:**
 
-![Diagrama – Gestão de Reservas Revisado](<../images/Diagrama processo 1 - Gestao de reservas.png>)
+![Diagrama – Gestão de Reservas Revisado](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%201%20-%20gest%C3%A3o%20de%20reservas.png)
 
 ## Tela 1 – Requisição de reserva
 
