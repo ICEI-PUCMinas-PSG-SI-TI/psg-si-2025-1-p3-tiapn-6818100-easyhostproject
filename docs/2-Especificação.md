@@ -32,12 +32,11 @@ Larissa tem 32 anos e é responsável por coordenar a equipe de limpeza e manute
 
 |ID    | Descrição do Requisito               | Prioridade |
 |------|--------------------------------------|------|
-|RF-001| Cadastro de hotel para gerenciamento | ALTA | 
-|RF-002| Alocação de hóspedes em quartos      | ALTA |
-|RF-003| Menu de serviços de quartos          | MÉDIO |
-|RF-004| Gerenciamento de folha salarial      | ALTA |
-|RF-005| Cadastro de funcionários             | ALTA |
-|RF-006| Controle de materiais de uso e consumo| BAIXA |
+|RF-001| Cadastro de hotel para gerenciamento  | ALTA | 
+|RF-002| Alocação de hóspedes em quartos       | ALTA |
+|RF-003| Menu de serviços de quartos           | MÉDIO |
+|RF-004| Gerenciamento da fatura dos hóspedes  | ALTA |
+|RF-005| Cadastro de funcionários              | ALTA |
 
 
 ### Requisitos não Funcionais
