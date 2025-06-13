@@ -5,7 +5,7 @@ imediatamente libere a chave do quarto ou redirecione para alocação alternativ
 
 **Modelo de processo (BPMN) - Check In:**
 
-![Diagrama - Check In](<../images/Diagrama Processo 2 - Check in.png>)
+![Diagrama - Check In](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%202%20-%20CHECK-IN.png)
 
 ## Tela 1 – Fornecimento dos dados
 
