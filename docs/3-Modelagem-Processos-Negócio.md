@@ -22,7 +22,7 @@ A implementação do Easy Host eliminará muitas dessas ineficiências ao oferec
    - **Distribuição de tarefas:** Os responsáveis pela limpeza e manutenção recebem instruções verbalmente ou em recados pouco organizados, ocasionando atrasos ou execução de serviços em duplicidade.
 
 5. **Faturamento e Pagamentos**  
-   - **Registro de despesas e pagamentos:** Tanto as despesas do hóspede quanto as contas do hotel (fornecedores, água, energia) são registradas em planilhas ou cadernos. Falhas humanas são frequentes, gerando inconsistências e dificuldade para conferência.  
+   - **Registro de despesas e pagamentos:** Despesas do hóspede são registradas em planilhas ou cadernos. Falhas humanas são frequentes, gerando inconsistências e dificuldade para conferência.  
    - **Pagamento ao final da estadia:** O hóspede efetua o pagamento em dinheiro ou cartão, que muitas vezes não é registrado de forma imediata e sistemática, comprometendo o controle financeiro.
 
 6. **Checkout**  
