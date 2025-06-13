@@ -4,7 +4,7 @@ O módulo de Registro de Despesas centraliza todos os lançamentos de consumo �
 
 **Modelo de processo (BPMN) - Processo Pagamento:**
 
-![Diagrama - Processo Pagamento](<../images/Diagrama processo 4 - processo de pagamento.png>)
+![Diagrama - Processo Pagamento](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%204%20-%20processo%20de%20pagamento.png)
 
 ## Tela 1 – Registrar despesas
 
