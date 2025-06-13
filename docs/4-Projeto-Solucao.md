@@ -88,19 +88,15 @@ USE EasyHostBd;
 ----------------------------------------
 
 CREATE TABLE TipoUsuario (
-  tipoUsuarioId        INT IDENTITY(1,1) PRIMARY KEY,
+  tipoUsuarioId         UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
   descricao      NVARCHAR(20)  NOT NULL
 );
 
 CREATE TABLE StatusReserva (
-  statusReservaId INT IDENTITY(1,1) PRIMARY KEY,
+  statusReservaId  UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
   descricao       NVARCHAR(20) NOT NULL
 );
 
-CREATE TABLE StatusServico (
-  statusServicoId INT IDENTITY(1,1) PRIMARY KEY,
-  descricao       NVARCHAR(50) NOT NULL
-);
 
 INSERT INTO TipoUsuario (descricao) VALUES
   ('Funcionario'),
@@ -124,7 +120,7 @@ INSERT INTO StatusServico (descricao) VALUES
 -- 2) Tabela principal de hotéis
 ----------------------------------------
 CREATE TABLE Hotel (
-  id             INT IDENTITY(1,1) PRIMARY KEY,
+  id              UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
   nomeHotel      NVARCHAR(255) NOT NULL
 );
 
@@ -132,8 +128,10 @@ CREATE TABLE Hotel (
 -- 3) Usuários (apenas FK para hotel)
 ----------------------------------------
 CREATE TABLE Usuario (
-  id             INT IDENTITY(1,1) PRIMARY KEY,
+  id              UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
   nome		     NVARCHAR(100) NOT NULL,
+  senha		     NVARCHAR(30) NOT NULL,
+  email		     NVARCHAR(100) NOT NULL,
   cpf            CHAR(11)      NOT NULL UNIQUE,
   salario        DECIMAL(10,2) NOT NULL,
   ativo          BIT NOT NULL DEFAULT(1),
@@ -141,22 +139,12 @@ CREATE TABLE Usuario (
   hotelIdFk      INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
 );
 
-----------------------------------------
--- 4) log de alterações
-----------------------------------------
-CREATE TABLE Alteracoes (
-  id             INT IDENTITY(1,1) PRIMARY KEY,
-  usuarioIdFk    INT NULL REFERENCES Usuario(id) ON DELETE SET NULL,
-  dataHora       DATETIME2   NOT NULL DEFAULT SYSUTCDATETIME(),
-  descricao      NVARCHAR(100) NOT NULL,
-  detalhes       NVARCHAR(MAX) NULL
-);
 
 ----------------------------------------
 -- 5) Hóspedes
 ----------------------------------------
 CREATE TABLE Hospede (
-  id             INT IDENTITY(1,1) PRIMARY KEY,
+  id              UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
   nome           NVARCHAR(255) NOT NULL,
   cpf            CHAR(11) NOT NULL UNIQUE,
   hotelIdFk      INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
@@ -166,12 +154,11 @@ CREATE TABLE Hospede (
 -- 6) Quartos
 ----------------------------------------
 CREATE TABLE Quarto (
-  id               INT IDENTITY(1,1) PRIMARY KEY,
+  id                UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
   numQuarto        INT NOT NULL,
   numCamasSolteiro INT NOT NULL DEFAULT(0),
   numCamasCasal    INT NOT NULL DEFAULT(0),
   maxPessoas       INT NOT NULL DEFAULT(1),
-  adicionais       NVARCHAR(MAX) NULL,
   hotelIdFk        INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
   );
 
@@ -179,7 +166,7 @@ CREATE TABLE Quarto (
 -- 7) Reservas
 ----------------------------------------
 CREATE TABLE Reserva (
-  id                 INT IDENTITY(1,1) PRIMARY KEY,
+  id                  UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
   hospedeIdFk        INT NULL REFERENCES Hospede(id) ON DELETE CASCADE,
   quartoIdFk         INT NOT NULL REFERENCES Quarto(id) ON DELETE CASCADE,
   dataEntrada        DATE NOT NULL,
@@ -188,16 +175,17 @@ CREATE TABLE Reserva (
 );
 
 ----------------------------------------
--- 8) Serviços vinculados a reserva
+-- 8) Consumo
 ----------------------------------------
-CREATE TABLE Servico (
-  id                     INT IDENTITY(1,1) PRIMARY KEY,
-  funcionarioResponsavel NVARCHAR(100) NOT NULL,
-  descricao              NVARCHAR(MAX) NULL,
-  statusServicoIdFk      INT NOT NULL DEFAULT 1 REFERENCES StatusServico(statusServicoId) ON DELETE NO ACTION,
-  criadoEm               DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME(),
-  concluidoEm            DATETIME2 NULL,
-  reservaIdFk            INT NOT NULL REFERENCES Reserva(id) ON DELETE CASCADE
+CREATE TABLE Consumo (
+  id             UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+  nome           NVARCHAR(200)   NOT NULL,
+  preco          DECIMAL(18,2)   NOT NULL,
+  hospedeIdFk    UNIQUEIDENTIFIER NOT NULL,
+  CONSTRAINT FK_Despesa_Hospede
+  FOREIGN KEY (hospedeIdFk)
+  REFERENCES Hospede(id)
+  ON DELETE CASCADE
 );
 
 
