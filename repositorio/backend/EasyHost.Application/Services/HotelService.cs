@@ -1,6 +1,8 @@
 ﻿using EasyHost.Application.Interfaces;
 using EasyHost.Domain.Entities;
 using EasyHost.Domain.Interfaces;
+using EasyHost.Application.DTOs.Response.HotelResponse;
+using Mapster;
 
 
 namespace EasyHost.Application.Services
@@ -25,6 +27,14 @@ namespace EasyHost.Application.Services
             {
                 throw new Exception("Erro ao tentar buscar no banco de dados", ex);
             }
+        }
+
+        public HotelDto GetHotelById(Guid id)
+        {
+              var hotel = _hotelRepository.GetHotelById(id)
+                ?? throw new KeyNotFoundException("Hotel não encontrado.");
+
+            return hotel.Adapt<HotelDto>();
         }
     }
 }

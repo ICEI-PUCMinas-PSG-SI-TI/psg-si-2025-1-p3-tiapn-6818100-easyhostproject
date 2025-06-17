@@ -68,6 +68,24 @@ export default function Cadastrar() {
     }
   };
 
+  const formatCurrency = (value) => {
+    if (!value) return "";
+    const number = Number(value.toString().replace(/\D/g, "")) / 100;
+    return number.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+      minimumFractionDigits: 2,
+    });
+  };
+
+  const handleSalarioChange = (e) => {
+    const rawValue = e.target.value.replace(/\D/g, "");
+    setForm((f) => ({
+      ...f,
+      salario: rawValue,
+    }));
+  };
+
   return (
     <>
       <Container
@@ -101,7 +119,7 @@ export default function Cadastrar() {
                 name="nome"
                 value={form.nome}
                 onChange={handleChange}
-                placeholder="Nome"
+                placeholder="Nome Completo"
                 className="placeholder-white bg-secondary bg-opacity-10 border-0 rounded-pill px-3 py-2 text-white mb-3"
                 required
               />
@@ -119,12 +137,13 @@ export default function Cadastrar() {
 
               <Form.Control
                 name="salario"
-                type="number"
-                value={form.salario}
-                onChange={handleChange}
+                value={formatCurrency(form.salario)}
+                onChange={handleSalarioChange}
                 placeholder="Salário"
                 className="placeholder-white bg-secondary bg-opacity-10 border-0 rounded-pill px-3 py-2 text-white mb-3"
                 required
+                inputMode="numeric"
+                autoComplete="off"
               />
 
               <Form.Select
@@ -211,7 +230,7 @@ export default function Cadastrar() {
               </Button>
               <Button
                 variant="outline-light"
-                className="w-100 rounded-pill py-2"
+                className="w-100 rounded-pill py-2 text-white bg-transparent"
                 onClick={() => (window.location.href = "/login")}
               >
                 Login

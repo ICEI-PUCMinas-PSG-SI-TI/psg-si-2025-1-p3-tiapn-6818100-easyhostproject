@@ -1,6 +1,6 @@
 using EasyHost.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-
+using EasyHost.Application.DTOs.Response.HotelResponse;
 
 namespace EasyHost.Api.Controllers
 {
@@ -15,12 +15,6 @@ namespace EasyHost.Api.Controllers
             _hotelService = hotelService;
         }
 
-        [HttpGet("run")]
-        public IActionResult Run()
-        {
-            return Ok("Ola easyHost");
-        }
-
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
@@ -28,5 +22,18 @@ namespace EasyHost.Api.Controllers
             return Ok(hoteis);
         }
 
+        [HttpGet("{id}")]
+        public ActionResult<HotelDto> GetHotelById(Guid id)
+        {
+            try
+            {
+                var hotel = _hotelService.GetHotelById(id);
+                return Ok(hotel);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { error = ex.Message });
+            }
+        }
     }
 }

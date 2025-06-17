@@ -10,6 +10,6 @@ namespace EasyHost.Application.Interfaces
         UsuarioDto CadastrarUsuario(CreateUsuarioRequestDto dto);
         string Login(UsuarioLoginDto dto);
         UsuarioDto AtualizarUsuario(UpdateUsuarioRequestDto dto);
-        void MudarSenha(UsuarioChangePasswordDto dto);
+        UsuarioDto GetUsuarioByEmail(string usuarioEmail);
     }
 }

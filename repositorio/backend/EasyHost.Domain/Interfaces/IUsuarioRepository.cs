@@ -11,6 +11,6 @@ namespace EasyHost.Domain.Interfaces
         bool HasLogin(string cpf);
         Usuario? GetUserByEmail(string email);
         Usuario? GetUserById(Guid userId);
-        List<Usuario> GetAllUsuarios();
+        IEnumerable<Usuario> GetAllUsuarios();
     }
 }

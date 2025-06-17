@@ -121,7 +121,7 @@ namespace EasyHost.Infrastructure.Repositorys
             return connection.QueryFirstOrDefault<Usuario>(sql, new { Id = id });
         }
 
-        public List<Usuario> GetAllUsuarios()
+        public IEnumerable<Usuario> GetAllUsuarios()
         {
             const string sql = @"
             SELECT

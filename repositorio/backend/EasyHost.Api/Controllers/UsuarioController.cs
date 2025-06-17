@@ -49,12 +49,9 @@ namespace EasyHost.Api.Controllers
             }
         }
 
-        [HttpPut("{id:guid}")]
-        public ActionResult<UsuarioDto> Atualizar(Guid id, [FromBody] UpdateUsuarioRequestDto dto)
+        [HttpPut("atualizar")]
+        public ActionResult<UsuarioDto> Atualizar([FromBody] UpdateUsuarioRequestDto dto)
         {
-            if (id != dto.id)
-                return BadRequest(new { error = "O ID da rota difere do corpo da requisição." });
-
             try
             {
                 var usuario = _usuarioService.AtualizarUsuario(dto);
@@ -66,21 +63,17 @@ namespace EasyHost.Api.Controllers
             }
         }
 
-        [HttpPatch("mudar-senha")]
-        public IActionResult ChangePassword([FromBody] UsuarioChangePasswordDto dto)
+        [HttpGet]
+        public ActionResult<UsuarioDto> GetUserByEmail(string email)
         {
             try
             {
-                _usuarioService.MudarSenha(dto);
-                return NoContent();
+                var user = _usuarioService.GetUsuarioByEmail(email);
+                return Ok(user);
             }
             catch (KeyNotFoundException ex)
             {
                 return NotFound(new { error = ex.Message });
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(new { error = ex.Message });
             }
         }
     }

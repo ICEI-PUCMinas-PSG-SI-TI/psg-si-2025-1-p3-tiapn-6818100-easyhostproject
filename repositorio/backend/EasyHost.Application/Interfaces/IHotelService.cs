@@ -1,14 +1,11 @@
 ﻿using EasyHost.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using EasyHost.Application.DTOs.Response.HotelResponse;
 
 namespace EasyHost.Application.Interfaces
 {
     public interface IHotelService
     {
         IEnumerable<Hotel> GetAll();
+        HotelDto GetHotelById(Guid id);
     }
 }

@@ -4,15 +4,17 @@ namespace EasyHost.Domain.Entities
 {
     public class Reserva
     {
-        private Guid _id;
-        private Guid _hospedeId;
-        private Guid _quartoId;
-        private DateOnly _dataEntrada;
-        private DateOnly _dataSaida;
-        private StatusReserva _statusReserva;
-        private List<Servico> _servicos = new();
+        public Guid _id { get; private set; }
+        public Guid _hospedeId { get; private set; }
+        public Guid _quartoId { get; private set; }
+        public Guid _hotelId { get; private set; }
+        public DateTime _dataEntrada { get; private set; }
+        public DateTime _dataSaida { get; private set; }
+        public StatusReserva _statusReserva { get; private set; }
 
-        public Reserva(Guid hospedeId, Guid quartoId, DateOnly dataEntrada, DateOnly dataSaida)
+        protected Reserva() { }
+
+        public Reserva(Guid hospedeId, Guid quartoId, Guid hotelIdFk, DateTime dataEntrada, DateTime dataSaida)
         {
             if (dataEntrada >= dataSaida)
                 throw new ArgumentException("Data de entrada deve ser anterior à data de saída");
@@ -20,21 +22,16 @@ namespace EasyHost.Domain.Entities
             _id = Guid.NewGuid();
             _hospedeId = hospedeId;
             _quartoId = quartoId;
+            _hotelId = hotelIdFk;
             _dataEntrada = dataEntrada;
             _dataSaida = dataSaida;
             _statusReserva = StatusReserva.Reservada;
         }
 
-        public void ChangeStatusReserva(StatusReserva novoStatus)
+        public void AlterarReserva(StatusReserva novoStatus)
         {
             _statusReserva = novoStatus;
         }
-
-        public void AdicionarServico(Servico servico)
-        {
-            _servicos.Add(servico);
-        }
-
     }
 
 }

@@ -31,22 +31,10 @@ namespace EasyHost.Domain.Entities
 
         public void AtualizarUsuario(string nome, decimal salario, TipoUsuario tipoUsuario, bool ativo)
         {
-            //POSSIVEIS EXCEÇÕES
-            //if (nome.Count() <= 0)
-            //    throw new ArgumentException("Nome inválido");
-            //if (salario <= 0)
-            //    throw new ArgumentException("Salário inválido");
-
-
             _nome = nome;
             _salario = salario;
             _tipoUsuario = tipoUsuario;
             _ativo = ativo;
-        }
-
-        public TipoUsuario GetTipoUsuario()
-        {
-            return _tipoUsuario;
         }
 
         public void AlterarSenha(string novaSenha)

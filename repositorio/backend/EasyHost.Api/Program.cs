@@ -3,6 +3,7 @@ using EasyHost.Application.Services;
 using EasyHost.Domain.Entities;
 using EasyHost.Domain.Interfaces;
 using EasyHost.Infrastructure.Data;
+using EasyHost.Infrastructure.Repositories;
 using EasyHost.Infrastructure.Repositorys;
 using Microsoft.AspNetCore.Identity;
 using System.Reflection;
@@ -41,7 +42,14 @@ builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IPasswordHasher<Usuario>, PasswordHasher<Usuario>>();
 builder.Services.AddScoped<IJwtService, JwtService>();
-
+builder.Services.AddScoped<IReservaRepository, ReservaRepository>();
+builder.Services.AddScoped<IReservaService, ReservaService>();
+builder.Services.AddScoped<IQuartoService, QuartoService>();
+builder.Services.AddScoped<IQuartoRepository, QuartoRepository>();
+builder.Services.AddScoped<IHospedeService, HospedeService>();
+builder.Services.AddScoped<IHospedeRepository, HospedeRepository>();
+builder.Services.AddScoped<IConsumoService, ConsumoService>();
+builder.Services.AddScoped<IConsumoRepository, ConsumoRepository>();
 
 var app = builder.Build();
 
