@@ -44,6 +44,11 @@ public class UsuarioService : IUsuarioService
             .GetUserByEmail(dto.email)
             ?? throw new UnauthorizedAccessException("Email não encontrado");
 
+        if (!user._ativo)
+        {
+            throw new UnauthorizedAccessException("Usuario inativo, entre em contato com um administrador");
+        }
+
         var result = _hasher.VerifyHashedPassword(user, user._senha, dto.senha);
         if (result == PasswordVerificationResult.Failed)
             throw new UnauthorizedAccessException("Senha inválida");
@@ -69,15 +74,11 @@ public class UsuarioService : IUsuarioService
         return user.Adapt<UsuarioDto>();
     }
 
-    public void MudarSenha(UsuarioChangePasswordDto dto)
+    public UsuarioDto GetUsuarioByEmail(string usuarioEmail)
     {
-        var user = _usuarioRepository.GetUserByEmail(dto.email)
+        var user = _usuarioRepository.GetUserByEmail(usuarioEmail)
                       ?? throw new KeyNotFoundException("Não tem um usuário com esse email");
 
-        var hash = _hasher.HashPassword(user, dto.newSenha);
-
-        user.AlterarSenha(hash);
-
-        _usuarioRepository.AtualizarUsuarioSenha(user);
+        return user.Adapt<UsuarioDto>();
     }
 }

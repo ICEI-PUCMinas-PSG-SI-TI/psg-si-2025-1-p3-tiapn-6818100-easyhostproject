@@ -1,5 +1,4 @@
 ﻿using EasyHost.Domain.Enums;
-using System;
 
 namespace EasyHost.Application.DTOs.Request.Usuario
 {

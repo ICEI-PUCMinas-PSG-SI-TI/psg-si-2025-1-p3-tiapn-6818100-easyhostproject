@@ -10,7 +10,6 @@ namespace EasyHost.Domain.Entities
     {
         public Guid Id { get; private set; }
         public string NomeHotel { get; private set; }
-
         public Hotel() { }
     }
 }

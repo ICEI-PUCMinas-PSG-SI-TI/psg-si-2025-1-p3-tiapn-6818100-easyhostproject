@@ -73,14 +73,6 @@ export default function Login() {
                 className="placeholder-white bg-secondary bg-opacity-10 border-0 rounded-pill px-3 py-2 text-white"
                 required
               />
-              <Button
-                variant="link"
-                className="position-absolute top-0 end-0 p-0 text-info"
-                style={{ margin: '0.75rem', fontSize: '12px' }}
-                onClick={() => window.location.href = '/mudar-senha'}
-              >
-                Esqueceu?
-              </Button>
             </Form.Group>
 
             <Button
@@ -97,7 +89,7 @@ export default function Login() {
 
             <Button
               variant="outline-light"
-              className="w-100 rounded-pill py-2"
+              className="w-100 rounded-pill py-2 text-white bg-transparent"
               onClick={() => window.location.href = '/cadastrar'}
             >
               Cadastrar-se
