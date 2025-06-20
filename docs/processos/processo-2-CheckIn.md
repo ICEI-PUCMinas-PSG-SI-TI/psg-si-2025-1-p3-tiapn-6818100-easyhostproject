@@ -1,102 +1,71 @@
-### 3.3.2 Processo 2 – CHECK IN
+### 3.3.2 Processo 2 – Reserva de Hóspedes
 
-O processo de Check-In visa agilizar a recepção de hóspedes, garantindo rapidez na confirmação de reservas e na organização dos quartos disponíveis. Ao unificar automaticamente a verificação de reservas com a checagem de disponibilidade em tempo real, reduzimos falhas de comunicação entre a recepção e o sistema de gestão, permitindo que o atendente 
-imediatamente libere a chave do quarto ou redirecione para alocação alternativa.
+O processo de reserva se inicia quando o usuário do sistema recebe uma solicitação de hospedagem por parte do hóspede. O sistema coleta os dados pessoais informados e realiza a verificação automática no cadastro, com base no CPF fornecido. Caso o hóspede ainda não esteja registrado, o usuário acessa a página de hóspedes e realiza o cadastro do novo cliente no sistema.
 
-**Modelo de processo (BPMN) - Check In:**
+Após confirmar ou realizar o cadastro, o usuário informa as datas desejadas para a reserva. O sistema valida os intervalos e consulta automaticamente a disponibilidade de quartos para o período solicitado. Em seguida, exibe as opções de quartos disponíveis.
 
-![Diagrama - Check In](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%202%20-%20CHECK-IN.png)
+O usuário, então, seleciona o quarto de acordo com a preferência do hóspede e confirma a reserva, momento em que a chave do quarto é disponibilizada ao cliente. Se não houver quartos disponíveis para as datas informadas, o sistema apresenta uma lista vazia e exibe uma mensagem de indisponibilidade, que deve ser comunicada ao hóspede.
 
-## Tela 1 – Fornecimento dos dados
+**Modelo de processo (BPMN) - Reserva de Hóspedes:**
 
-| Campo               | Tipo           | Restrições               | Valor default |
-|---------------------|----------------|--------------------------|---------------|
-| Número da reserva   | Texto          | obrigatório              |               |
-| CPF do cliente      | Caixa de texto | formato: 000.000.000-00  |               |
-| Nome completo       | Caixa de texto | obrigatório              |               |
+![Diagrama - Reserva de Hóspedes](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20Processo%202%20%E2%80%93%20Reserva%20de%20H%C3%B3spedes.png)
 
-| **Comandos** | **Destino**                      | **Tipo** |
-|--------------|----------------------------------|----------|
-| continuar    | Verificar reserva no sistema     | default  |
-| cancelar     | Fim do processo                  | cancel   |
-
----
-
-## Tela 2 – Verificar reserva no sistema
+## Tela 1 – Lista de reservas
 
 | Campo           | Tipo           | Restrições                   | Valor default |
 |-----------------|----------------|------------------------------|---------------|
-| CPF do cliente  | Caixa de texto | formato: 000.000.000-00      |               |
+| Data para filtrar  | Data           | ≥ data atual        |               |
+
+
+
+| **Comandos** | **Destino**                      | **Tipo** |
+|--------------|----------------------------------|----------|
+| Criar Reserva    | Criar Reserva no sistema     | default  |
+
+
+---
+
+## Tela 2 – Criar reserva
+
+| Campo           | Tipo           | Restrições                   | Valor default |
+|-----------------|----------------|------------------------------|---------------|
+| CPF do Hospede  | Caixa de texto | formato: 000.000.000-00      |               |
 | Nome completo   | Caixa de texto | obrigatório                  |               |
+| Data de entrada  | Data           | ≥ data atual        |               |
+| Data de Saída  | Data           | ≥ data atual        |               |
 
 | **Comandos** | **Destino**                        | **Tipo** |
 |--------------|------------------------------------|----------|
-| continuar    | Entrega chave / Verif. quartos	    | default  |
-| cancelar     | Fim do processo                    | cancel   |
+| Buscar Hóspede    | Procura Hóspede	    | search  |
+| Criar Hóspede     | Cria Hóspede                    | create   |
+| Quartos Disponíveis    | Procura quartos disponiveis	    | search  |
+| Criar Reserva     | Fim do processo                    | create   |
 
 ---
 
-## Tela 3 – Verificação de disponibilidade de quartos
+## Tela 3 – Hospedes
 
 | Campo                    | Tipo           | Restrições          | Valor default |
 |--------------------------|----------------|---------------------|---------------|
-| Tipo de quarto desejado  | Seleção única  | obrigatório         | Standard      |
-| Data de entrada          | Data           | ≥ data atual        |               |
-| Data de saída            | Data           | > data de entrada   |               |
+| Buscar por nome  | Pesquisa  |          | Standard      |
 
 | **Comandos** | **Destino**                         | **Tipo** |
 |--------------|-------------------------------------|----------|
-| verificar    | Confirmação dos dados               | default  |
-| voltar       | Verificar reserva no sistema        | cancel   |
+| Novo Hóspede    | Criação de Hóspede               | default  |
+
 
 ---
 
-## Tela 4 – Confirmação dos dados do cliente
+## Tela 4 – Novo Hóspede
 
 | Campo               | Tipo              | Restrições          | Valor default    |
 |---------------------|-------------------|---------------------|------------------|
 | Nome completo       | Caixa de texto    | obrigatório         |                  |
 | CPF                 | Caixa de texto    | formato válido      |                  |
-| Telefone            | Caixa de texto    | obrigatório         |                  |
-| Documento com foto  | Arquivo           | formato .jpg / .pdf |                  |
 
 | **Comandos** | **Destino**               | **Tipo** |
 |--------------|---------------------------|----------|
-| confirmar    | Alocação do cliente       | default  |
+| Cadastrar    | Criação do hospede       | default  |
 | cancelar     | Fim do processo           | cancel   |
 
 ---
-
-## Tela 5 – Alocação do cliente
-
-| Campo             | Tipo   | Restrições         | Valor default |
-|-------------------|--------|--------------------|---------------|
-| Número do quarto  | Número | quarto disponível  |               |
-| Andar             | Número | ≥ 1                |               |
-
-| **Comandos** | **Destino**                 | **Tipo** |
-|--------------|-----------------------------|----------|
-| concluir     | Entrega chave ao cliente    | default  |
-
-## Tela 6 – Enviar aviso de indisponibilidade
-
-| Campo                 | Tipo              | Restrições        | Valor default                             |
-|-----------------------|-------------------|-------------------|-------------------------------------------|
-| e-mail do cliente     | Caixa de texto    | formato de e-mail |                                           |
-| mensagem              | Área de texto     | automático        | Texto informando indisponibilidade de quartos |
-
-| **Comandos** | **Destino**          | **Tipo** |
-|--------------|----------------------|----------|
-| enviar       | Fim do processo      | default  |
-
----
-
-## Tela 7 – Orientações gerais ao cliente
-
-| Campo   | Tipo         | Restrições | Valor default |
-|---------|--------------|------------|---------------|
-| —       | Texto estático | —          | —             |
-
-| **Comandos** | **Destino**          | **Tipo** |
-|--------------|----------------------|----------|
-| concluir     | Fim do processo      | default  |
