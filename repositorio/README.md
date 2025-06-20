@@ -52,8 +52,13 @@ Estrutura de Pastas
 
 /
 ├─ src/
+
 │  ├─ db/                ← scripts e README do container SQL
+
 │  ├─ frontend/          ← código React/Angular/etc.
+
 │  └─ backend/
+
 │     └─ Easyhost.api/   ← projeto .NET Web API
+
 └─ README.md
