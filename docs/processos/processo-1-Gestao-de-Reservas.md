@@ -1,10 +1,10 @@
-### 3.3.1 Processo 1 – Gestão de reservas
+### 3.3.1 Processo 1 – Configuração Inicial e Cadastro de Quartos
 
-O processo de gerenciamento de reservas tem como objetivo tornar as operações mais dinâmicas e precisas, minimizando erros e garantindo maior eficiência. Para isso, busca-se a automação de etapas-chave, integrando diferentes setores do hotel para otimizar o fluxo de informações e garantir uma experiência mais ágil e confiável tanto para os hóspedes quanto para a equipe de atendimento.
+O processo tem início quando o hotel entra em contato com a EasyHost para solicitar a utilização do sistema. A equipe da EasyHost realiza o cadastro inicial do hotel diretamente no banco de dados, inserindo as informações essenciais para habilitar o acesso à plataforma. Após a configuração inicial, o acesso ao sistema é liberado para o hotel, permitindo que seus funcionários realizem o cadastro dos administradores e demais colaboradores. Com os usuários devidamente cadastrados, o administrador do hotel acessa o sistema, navega até a página de gestão de quartos e cadastra todas as acomodações disponíveis, concluindo a etapa de configuração e preparação para o uso completo da plataforma.
 
-**Modelo de processo (BPMN) - Gerência de reservas:**
+**Modelo de processo (BPMN) - Configuração Inicial e Cadastro de Quartos:**
 
-![Diagrama – Gestão de Reservas Revisado](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%201%20-%20gest%C3%A3o%20de%20reservas.png)
+![Diagrama – Configuração Inicial e Cadastro de Quartos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%201%20-%20Configura%C3%A7%C3%A3o%20inicial%20do%20sistema.png)
 
 ## Tela 1 – Requisição de reserva
 
