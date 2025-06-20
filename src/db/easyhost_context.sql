@@ -1,108 +1,119 @@
-CREATE DATABASE EasyHostBd;
+-- 1) CriaÃ§Ã£o da base de dados
+CREATE DATABASE [EasyHostDb];
 GO
 
-USE EasyHostBd;
+USE [EasyHostDb];
 GO
 
--- 1) Lookup tables de enumerações
+-- 2) Tabela TipoUsuario
 CREATE TABLE TipoUsuario (
-  tipoUsuarioId INT IDENTITY(1,1) PRIMARY KEY,
-  descricao     NVARCHAR(20) NOT NULL
+    tipoUsuarioId INT           NOT NULL PRIMARY KEY,
+    descricao     NVARCHAR(20)  NOT NULL
 );
+GO
+
+-- 3) Tabela StatusReserva
 CREATE TABLE StatusReserva (
-  statusReservaId INT IDENTITY(1,1) PRIMARY KEY,
-  descricao       NVARCHAR(20) NOT NULL
+    statusReservaId INT           NOT NULL PRIMARY KEY,
+    descricao        NVARCHAR(20)  NOT NULL
 );
-CREATE TABLE StatusServico (
-  statusServicoId INT IDENTITY(1,1) PRIMARY KEY,
-  descricao       NVARCHAR(50) NOT NULL
-);
-
-INSERT INTO TipoUsuario (descricao) VALUES
-  ('Funcionario'),
-  ('Administrador');
-INSERT INTO StatusReserva (descricao) VALUES
-  ('Reservada'),
-  ('Confirmada'),
-  ('Em Andamento'),
-  ('Concluida'),
-  ('Cancelada');
-INSERT INTO StatusServico (descricao) VALUES
-  ('Pendente'),
-  ('Em Andamento'),
-  ('Concluido'),
-  ('Cancelado');
 GO
 
--- 2) Tabela principal de hotéis
+-- 4) Tabela Hotel
 CREATE TABLE Hotel (
-  id        INT IDENTITY(1,1) PRIMARY KEY,
-  nomeHotel NVARCHAR(255) NOT NULL
+    id        UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    nomeHotel NVARCHAR(255)    NOT NULL
 );
 GO
 
--- 3) Usuário
+-- 5) Tabela Usuario
 CREATE TABLE Usuario (
-  id             INT IDENTITY(1,1) PRIMARY KEY,
-  nome           NVARCHAR(100) NOT NULL,
-  cpf            CHAR(11) NOT NULL UNIQUE,
-  salario        DECIMAL(10,2) NOT NULL,
-  ativo          BIT NOT NULL DEFAULT 1,
-  TipoUsuario    INT NOT NULL REFERENCES TipoUsuario(tipoUsuarioId) ON DELETE NO ACTION,
-  hotelIdFk      INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
+    id             UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    nome           NVARCHAR(100)     NOT NULL,
+    cpf            CHAR(11)          NOT NULL,
+    salario        DECIMAL(10,2)     NOT NULL,
+    ativo          BIT               NOT NULL,
+    tipoUsuarioId  INT               NOT NULL,
+    hotelIdFk      UNIQUEIDENTIFIER  NOT NULL,
+    email          NVARCHAR(200)     NOT NULL,
+    senha          NVARCHAR(256)     NOT NULL,
+    CONSTRAINT FK_Usuario_TipoUsuario FOREIGN KEY (tipoUsuarioId)
+        REFERENCES TipoUsuario(tipoUsuarioId),
+    CONSTRAINT FK_Usuario_Hotel       FOREIGN KEY (hotelIdFk)
+        REFERENCES Hotel(id)
 );
 GO
 
--- 4) Alterações
-CREATE TABLE Alteracoes (
-  id             INT IDENTITY(1,1) PRIMARY KEY,
-  usuarioIdFk    INT NULL REFERENCES Usuario(id) ON DELETE SET NULL,
-  dataHora       DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME(),
-  descricao      NVARCHAR(100) NOT NULL,
-  detalhes       NVARCHAR(MAX) NULL
-);
-GO
-
--- 5) Hóspede
-CREATE TABLE Hospede (
-  id        INT IDENTITY(1,1) PRIMARY KEY,
-  nome      NVARCHAR(255) NOT NULL,
-  cpf       CHAR(11) NOT NULL UNIQUE,
-  hotelIdFk INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
-);
-GO
-
--- 6) Quarto
+-- 6) Tabela Quarto
 CREATE TABLE Quarto (
-  id               INT IDENTITY(1,1) PRIMARY KEY,
-  numQuarto        INT NOT NULL,
-  numCamasSolteiro INT NOT NULL DEFAULT 0,
-  numCamasCasal    INT NOT NULL DEFAULT 0,
-  maxPessoas       INT NOT NULL DEFAULT 1,
-  adicionais       NVARCHAR(MAX) NULL,
-  hotelIdFk        INT NOT NULL REFERENCES Hotel(id) ON DELETE CASCADE
+    id               UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    numQuarto        INT               NOT NULL,
+    numCamasSolteiro INT               NOT NULL,
+    numCamasCasal    INT               NOT NULL,
+    maxPessoas       INT               NOT NULL,
+    hotelIdFk        UNIQUEIDENTIFIER  NOT NULL,
+    precoDiaria      DECIMAL(18,2)     NOT NULL,
+    CONSTRAINT FK_Quarto_Hotel FOREIGN KEY (hotelIdFk)
+        REFERENCES Hotel(id)
 );
 GO
 
--- 7) Reserva
+-- 7) Tabela Hospede
+CREATE TABLE Hospede (
+    id        UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    nome      NVARCHAR(255)    NOT NULL,
+    cpf       CHAR(11)         NOT NULL,
+    hotelIdFk UNIQUEIDENTIFIER NOT NULL,
+    CONSTRAINT FK_Hospede_Hotel FOREIGN KEY (hotelIdFk)
+        REFERENCES Hotel(id)
+);
+GO
+
+-- 8) Tabela Reserva
 CREATE TABLE Reserva (
-  id                INT IDENTITY(1,1) PRIMARY KEY,
-  hospedeIdFk       INT NULL    REFERENCES Hospede(id) ON DELETE CASCADE,
-  quartoIdFk        INT NOT NULL REFERENCES Quarto(id) ON DELETE NO ACTION,
-  dataEntrada       DATE NOT NULL,
-  dataSaida         DATE NOT NULL,
-  statusReservaIdFk INT NOT NULL DEFAULT 1 REFERENCES StatusReserva(statusReservaId) ON DELETE NO ACTION
+    id                UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    hospedeIdFk       UNIQUEIDENTIFIER NULL,
+    quartoIdFk        UNIQUEIDENTIFIER NOT NULL,
+    dataEntrada       DATE              NOT NULL,
+    dataSaida         DATE              NOT NULL,
+    statusReservaIdFk INT               NOT NULL,
+    hotelIdFk         UNIQUEIDENTIFIER NULL,
+    CONSTRAINT FK_Reserva_Hospede       FOREIGN KEY (hospedeIdFk)
+        REFERENCES Hospede(id),
+    CONSTRAINT FK_Reserva_Quarto        FOREIGN KEY (quartoIdFk)
+        REFERENCES Quarto(id),
+    CONSTRAINT FK_Reserva_StatusReserva FOREIGN KEY (statusReservaIdFk)
+        REFERENCES StatusReserva(statusReservaId),
+    CONSTRAINT FK_Reserva_Hotel         FOREIGN KEY (hotelIdFk)
+        REFERENCES Hotel(id)
 );
 GO
 
--- 8) Serviço
-CREATE TABLE Servico (
-  id                     INT IDENTITY(1,1) PRIMARY KEY,
-  funcionarioResponsavel NVARCHAR(100) NOT NULL,
-  descricao              NVARCHAR(MAX) NULL,
-  statusServicoIdFk      INT NOT NULL DEFAULT 1 REFERENCES StatusServico(statusServicoId) ON DELETE NO ACTION,
-  criadoEm               DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME(),
-  concluidoEm            DATETIME2 NULL,
-  reservaIdFk            INT NOT NULL REFERENCES Reserva(id) ON DELETE CASCADE
+-- 9) Tabela Consumo
+CREATE TABLE Consumo (
+    id          UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    nome        NVARCHAR(200)    NOT NULL,
+    preco       DECIMAL(18,2)    NOT NULL,
+    hospedeIdFk UNIQUEIDENTIFIER NOT NULL,
+    hotelIdFk   UNIQUEIDENTIFIER NULL,
+    CONSTRAINT FK_Consumo_Hospede FOREIGN KEY (hospedeIdFk)
+        REFERENCES Hospede(id),
+    CONSTRAINT FK_Consumo_Hotel   FOREIGN KEY (hotelIdFk)
+        REFERENCES Hotel(id)
 );
+GO
+
+--  Inserindo enums TipoUsuario 
+INSERT INTO TipoUsuario (tipoUsuarioId, descricao) VALUES
+    (1, 'Funcionario'), 
+    (2, 'Administrador'); 
+GO
+
+-- Inserindo enums StatusReserva 
+INSERT INTO StatusReserva (statusReservaId, descricao) VALUES
+    (1, 'Reservada'), 
+    (2, 'Confirmada'), 
+    (3, 'Andamento'), 
+    (4, 'Concluida'), 
+    (5, 'Cancelada'); 
 GO
