@@ -27,29 +27,47 @@ Organizamos o sistema dessa forma para facilitar futuras melhorias, como adicion
 
 ### 4.2. Protótipos de telas
 
-### <p align="center">Login</p>
+### <p align="center">CADASTRO USUARIO</p>
+![Cadastro](docs/images/WIREFRAMES/WIREFRAME - CADASTRO DE HOSPEDE.png)
 
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20login.png)
-### <p align="center">HOME (FUNCIONÁRIO)</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20HOME%20(FUNCIONARIO).png)
-### <p align="center">HOME (ADMIN)</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20HOME%20(ADMIN).png)
-### <p align="center">MENU DE QUARTOS</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20MENU%20DE%20QUARTOS.png)
-### <p align="center">PÁGINA QUARTOS (DISPONÍVEL)</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20P%C3%81GINA%20QUARTO%20(DISPONIVEL).png)
-### <p align="center">PÁGINA QUARTOS (OCUPADO)</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20P%C3%81GINA%20QUARTO%20(HOSPEDADO).png)
-### <p align="center">CRUD (FUNCIONÁRIO)</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20CRUD%20(FUNCIONARIOS).png)
-### <p align="center">CRUD (QUARTOS)</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20CRUD%20(QUARTOS).png)
-### <p align="center">CRUD (SERVIÇOS)</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20CRUD%20(SERVI%C3%87OS).png)
-### <p align="center">SERVIÇOS INTERNOS</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20SERVI%C3%87OS%20INTERNOS.png)
+### <p align="center">LOGIN</p>
+![Login](docs/images/WIREFRAMES/WIREFRAME - LOGIN DE USUARIO.png)
+
+### <p align="center">HOME</p>
+![Home](docs/images/WIREFRAMES/Wireframes - HOME.png)
+
+### <p align="center">MENU DE QUARTOS (Admin)</p>
+![MenuQuarto](docs/images/WIREFRAMES/Wireframes - MENU DE QUARTOS.png)
+
+### <p align="center">CADASTRO DE QUARTOS (Admin)</p>
+![CadastroQuarto](docs/images/WIREFRAMES/Wireframes - CADASTRO DE QUARTOS.png)
+
+### <p align="center">EDIÇÃO DE QUARTOS</p>
+![EditarQuarto](docs/images/WIREFRAMES/Wireframes - EDIÇÃO DE QUARTO (ADMIN).png)
+
+### <p align="center">MENU DE HOSPEDES</p>
+![MenuHospede](docs/images/WIREFRAMES/WIREFRAME - MENU DE HOSPEDES.jpg)
+
+### <p align="center">CADASTRO DE HOSPEDES</p>
+![CadastroHospede](docs/images/WIREFRAMES/Wireframes - CADASTRO DE HOSPEDE.jpg)
+
+### <p align="center">CADASTRO CONSUMO DO HOSPEDE</p>
+![CadastroConsumo](docs/images/WIREFRAMES/Wireframes - CADASTRO DE CONSUMO.png)
+
+### <p align="center">LISTA CONSUMO DE HOSPEDE</p>
+![ListaConsumo](docs/images/WIREFRAMES/Wireframes - LISTA DE CONSUMO HOSPODES.jpg)
+
+### <p align="center">MENU RESERVAS</p>
+![MenuReservas](docs/images/WIREFRAMES/Wireframes - PAGINA DE RESERVAS.jpg)
+
+### <p align="center">CADASTRO RESERVA</p>
+![CadastrorReserva](docs/images/WIREFRAMES/Wireframes - CADASTRO DE RESERVAS.png)
+
+### <p align="center">CONSUMO TOTAL RESERVA</p>
+![ConsumoTotalReserva](docs/images/WIREFRAMES/Wireframes - VISUALIZAR O CONSUMO TOTAL DA RESERVA.jpg)
+
 ### <p align="center">RELATÓRIO GERAL</p>
-![Login](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/WIREFRAMES/Wireframes%20-%20RELAT%C3%93RIO%20GERAL.png)
+![Relatorio](docs/images/WIREFRAMES/Wireframes - MENU DE RELATORIOS.jpg)
 
 
 ## Diagrama de Classes
@@ -199,8 +217,8 @@ CREATE TABLE Consumo (
 |**Dimensão**     | **Tecnologia**  |
 | --------------- | --------------- |
 | SGBD            | SQL Server      |
-| Front end       | React Framework |
+| Front end       | React           |
 | Back end        | .NET            |
-| Deploy          | GitHub Pages    |
+| Deploy          | LocalHost   |
 | Containerização | Docker          |
 
