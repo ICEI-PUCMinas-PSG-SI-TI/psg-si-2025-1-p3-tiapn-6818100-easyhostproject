@@ -6,58 +6,61 @@ O processo tem início quando o hotel entra em contato com a EasyHost para solic
 
 ![Diagrama – Configuração Inicial e Cadastro de Quartos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%201%20-%20Configura%C3%A7%C3%A3o%20inicial%20do%20sistema.png)
 
-## Tela 1 – Requisição de reserva
+## Tela 1 – Cadastro de usuário
 
 | Campo                | Tipo           | Restrições               | Valor default |
 |----------------------|----------------|--------------------------|---------------|
 | nome                 | Caixa de texto | obrigatório               |               |
+| cpf               | Caixa de texto | XXX.XXX.XXX-XX |               |
+| salário             | Número         | formato dinheiro    |               |
+| tipo_funcionário       | Seleção única   | opção: funcionário, administrador       |               |
 | e-mail               | Caixa de texto | formato xxxxxxx@xmail.com |               |
-| telefone             | Número         | formato (xx)xxxxx-xxxx    |               |
-| data_checkin         | Data           | formato dd-mm-aaaa       |               |
-| data_checkout        | Data           | formato dd-mm-aaaa       |               |
-| tipo_quarto          | Seleção única  | opção: solteiro, casal    |               |
-| quantidade_pessoas   | Número         | mínimo 1                  |               |
+| Senha         | Caixa de texto  |     |               |
+| Confirmar Senha         | Caixa de texto  |         |               |
 
 | **Comandos** | **Destino**                             | **Tipo** |
 |--------------|-----------------------------------------|----------|
-| enviar       | Recebimento de pedido de reserva        | default  |
-| cancelar     | Fim do processo                         | cancel   |
+| Cadastrar       | Cadastra usuário        | default  |
+
 
 ---
 
-## Tela 2 – Avisar cliente sobre indisponibilidade
-
-| Campo            | Tipo           | Restrições            | Valor default                                   |
-|------------------|----------------|-----------------------|-------------------------------------------------|
-| e-mail_cliente   | Caixa de texto | formato de e-mail     |                                                 |
-| mensagem         | Área de texto  | texto automático      | texto automático informando a indisponibilidade |
+## Tela 2 – Gerenciamento de Quartos
 
 | **Comandos** | **Destino**                   | **Tipo** |
 |--------------|-------------------------------|----------|
-| voltar       | Requisição de reserva         | default  |
+| Novo Quarto     | Criação de quarto         | default  |
+| Editar     | Editar quarto         | default  |
+| Excluir     | Exclusão de quarto         | default  |
 
 ---
 
-## Tela 3 – Fornecimento de dados
-
+## Tela 3 – Novo Quarto
 | Campo            | Tipo    | Restrições                          | Valor default                                     |
 |------------------|---------|-------------------------------------|---------------------------------------------------|
-| dados_cliente    | Tabela  | dados preenchidos na reserva        |                                                   |
-| valor total      | Número  | calculado com base nas datas        |                                                   |
+| Número do quarto    | Número   |         |                                                   |
+| Camas Solteiro      | Número  |         |                                                   |
+| Camas Casal     | Tabela  |        |                                                   |
+| Máximo Pessoas      | Número  |         |                                                   |
+| Preço diária      | Dinheiro  |        |                                                   |
 
 | **Comandos** | **Destino**           | **Tipo** |
 |--------------|-----------------------|----------|
-| prosseguir   | Pagamento da reserva  | default  |
+| Cadastrar   | Gerenciamento de quartos  | default  |
+| Ferchar   | Gerenciamento de quartos  | default  |
 
 ---
 
-## Tela 4 – Confirmar reserva para o cliente
+## Tela 4 – Editar Quarto
 
-| Campo            | Tipo           | Restrições            | Valor default                              |
-|------------------|----------------|-----------------------|--------------------------------------------|
-| e-mail_cliente   | Caixa de texto | formato de e-mail     |                                            |
-| mensagem         | Área de texto  | texto automático      | texto automático de confirmação             |
+| Campo            | Tipo    | Restrições                          | Valor default                                     |
+|------------------|---------|-------------------------------------|---------------------------------------------------|
+| Camas Solteiro      | Número  |         |                                                   |
+| Camas Casal     | Tabela  |        |                                                   |
+| Máximo Pessoas      | Número  |         |                                                   |
+| Preço diária      | Dinheiro  |        |                                                   |
 
-| **Comandos** | **Destino**     | **Tipo** |
-|--------------|-----------------|----------|
-| encerrar     | Fim do processo | default  |
+| **Comandos** | **Destino**           | **Tipo** |
+|--------------|-----------------------|----------|
+| Salvar   | Gerenciamento de quartos  | default  |
+| Ferchar   | Gerenciamento de quartos  | default  |
