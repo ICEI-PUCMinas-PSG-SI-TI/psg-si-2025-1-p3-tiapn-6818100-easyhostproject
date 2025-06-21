@@ -15,12 +15,16 @@ O usuário, então, seleciona o quarto de acordo com a preferência do hóspede 
 | Campo           | Tipo           | Restrições                   | Valor default |
 |-----------------|----------------|------------------------------|---------------|
 | Data para filtrar  | Data           | ≥ data atual        |               |
+| Status  | Seleção unica: Reservado, Em andamento, Finalizada, Cancelada          | ≥ data atual        |               |
 
 
 
 | **Comandos** | **Destino**                      | **Tipo** |
 |--------------|----------------------------------|----------|
 | Criar Reserva    | Criar Reserva no sistema     | default  |
+| Consumo    | Calcula consumo     | default  |
+| Excluir    | Exclui reserva     | default  |
+
 
 
 ---
