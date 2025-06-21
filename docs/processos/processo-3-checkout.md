@@ -1,87 +1,25 @@
-### 3.3.3 Processo 3 - CHECKOUT
+### 3.3.3 Processo 3 – Gestão de Status de Reserva
 
-O processo de checkout tem como objetivo tornar a finalização da estadia mais dinâmica, rápida e confiável, reduzindo o tempo de espera e evitando inconsistências nos registros de consumo e pagamentos. Ao automatizar etapas como a conferência de consumos e a geração de relatórios, o sistema garante mais precisão nas informações e melhora a experiência do hóspede, ao mesmo tempo em que facilita o trabalho da equipe de recepção.
+Após a criação da reserva, o sistema realiza o acompanhamento de todo o ciclo de vida da reserva, que pode assumir diferentes status: Reservada, Em andamento, Concluída ou Cancelada. Cada alteração na situação da estadia deve ser registrada manualmente pelo usuário, que é responsável por atualizar o status da reserva no sistema conforme o progresso real da hospedagem. Essa atualização garante o controle preciso e atualizado das reservas em operação.
 
-**Modelo de processo (BPMN) - Check Out:**
+**Modelo de processo (BPMN) - Gestão de Status de Reserva:**
 
-![Diagrama - Ckeck Out](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%203%20-%20CHECKOUT.png)
+![Diagrama - Gestão de Status de Reserva](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20Processo%203%20%E2%80%93%20Gest%C3%A3o%20de%20Status%20de%20Reserva.png)
 
-## Tela 1 – Acessar Sistema
+## Tela 1 – Lista de reservas
 
-| Campo | Tipo           | Restrições             | Valor default |
-|-------|----------------|------------------------|---------------|
-| login | Caixa de texto | formato de e-mail      |               |
-| senha | Caixa de texto | mínimo de 8 caracteres |               |
+| Campo           | Tipo           | Restrições                   | Valor default |
+|-----------------|----------------|------------------------------|---------------|
+| Data para filtrar  | Data           | ≥ data atual        |               |
+| Status  | Seleção unica: Reservado, Em andamento, Finalizada, Cancelada          | ≥ data atual        |               |
 
-| **Comandos** | **Destino**                       | **Tipo** |
-|--------------|------------------------------------|----------|
-| entrar       | Verificar consumo pelo sistema     | default  |
-| cancelar     | Fim do processo                    | cancel   |
 
----
 
-## Tela 2 – Verificar consumo pelo sistema
-
-| Campo             | Tipo           | Restrições              | Valor default                |
-|-------------------|----------------|-------------------------|------------------------------|
-| Nome do hóspede   | Caixa de texto | obrigatório             |                              |
-| Número da reserva | Número         | obrigatório             |                              |
-| Itens consumidos  | Tabela         | preenchido pelo sistema |                              |
-
-| **Comandos** | **Destino**                                          | **Tipo** |
-|--------------|------------------------------------------------------|----------|
-| continuar    | Pagar (se houver) / Devolver chaves (se não houver)  | default  |
-| sair         | Fim do processo                                      | cancel   |
+| **Comandos** | **Destino**                      | **Tipo** |
+|--------------|----------------------------------|----------|
+| Criar Reserva    | Criar Reserva no sistema     | default  |
+| Consumo    | Calcula consumo     | default  |
+| Excluir    | Exclui reserva     | default  |
 
 ---
 
-## Tela 3 – Pagar consumíveis
-
-| Campo               | Tipo             | Restrições      | Valor default |
-|---------------------|------------------|-----------------|---------------|
-| Valor total         | Número           | somente leitura |               |
-| Método de pagamento | Seleção única    | débito, crédito, pix |         |
-| Comprovante         | Upload de arquivo | opcional      |               |
-
-| **Comandos** | **Destino**         | **Tipo** |
-|--------------|---------------------|----------|
-| pagar        | Devolver as chaves  | default  |
-
----
-
-## Tela 4 – Devolver as chaves
-
-| Campo                    | Tipo          | Restrições       | Valor default |
-|--------------------------|---------------|------------------|---------------|
-| Data e hora de devolução | Data e Hora   | automático       | data atual    |
-| Observações              | Área de texto | opcional         |               |
-
-| **Comandos**        | **Destino**                           | **Tipo** |
-|---------------------|----------------------------------------|----------|
-| confirmar devolução | Encerramento da estadia no sistema     | default  |
-
----
-
-## Tela 5 – Encerramento da estadia no sistema
-
-| Campo             | Tipo        | Restrições    | Valor default |
-|-------------------|-------------|---------------|---------------|
-| Data e hora saída | Data e Hora | automático    | data atual    |
-
-| **Comandos** | **Destino**            | **Tipo** |
-|--------------|------------------------|----------|
-| concluir     | Agendamento da limpeza | default  |
-
----
-
-## Tela 6 – Agendamento da limpeza
-
-| Campo            | Tipo           | Restrições    | Valor default |
-|------------------|----------------|---------------|---------------|
-| Número do quarto | Número         | obrigatório   |               |
-| Data da limpeza  | Data           | ≥ data atual  |               |
-| Observações      | Área de texto  | opcional      |               |
-
-| **Comandos** | **Destino**      | **Tipo** |
-|--------------|------------------|----------|
-| salvar       | Fim do processo  | default  |
