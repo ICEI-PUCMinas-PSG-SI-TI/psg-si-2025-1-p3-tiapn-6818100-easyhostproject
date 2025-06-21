@@ -1,34 +1,24 @@
-### 3.3.5 Processo 5 - Gerenciamento do serviço para Hóspedes
+### 3.3.5 Processo 5 – Check-out
 
-O atendimento começa com o cliente solicitando um serviço por telefone. O atendente registra todas as informações no sistema, associando o pedido ao nome do cliente. Após o registro, o pedido é formalizado e automaticamente direcionado para os setores responsáveis pela execução do serviço, dando início ao processo interno de atendimento. 
+No momento do check-out, o usuário acessa a lista de reservas e localiza a reserva do hóspede que está encerrando a estadia. Ao selecionar a opção “Valor da Reserva”, o sistema realiza automaticamente o cálculo do valor total, considerando o número de diárias do quarto e todos os consumos extras registrados durante a hospedagem. O valor final é exibido na tela para conferência e pagamento. Após a confirmação do pagamento, o usuário atualiza o status da reserva para “Concluída” e a chave do quarto é devolvida ao estoque, tornando-se disponível para novas reservas. 
 
-**Modelo de processo (BPMN) - Serviço para Hóspedes:**
+**Modelo de processo (BPMN) - Check-out:**
 
-![Diagrama - Serviço para Hóspedes](<../images/Diagrama processo 5 - Gerenciamento do serviço para Hóspedes.png>)
+![Diagrama - Check-out](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20Processo%205%20-%20CheckOut.png)
 
-## Tela 1 – Atendente registra pedido no sistema
+## Tela 1 – Lista de reservas
 
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| Nome do cliente | caixa de texto  |       obrigatório         |                   |
-| Número do quarto | Número  |         somente números inteiros       |                   |
-| Tipo de serviço | Seleção única  |        opções de serviços       |                   |
-| Descrição do pedido | Área de texto  |        mínimo de 10 caracteres        |                   |
-| Data e hora do pedido | Data e Hora  |      formato dd-mm-aaaa, hh:mm:ss          |         data/hora: atual          |
+| Campo           | Tipo           | Restrições                   | Valor default |
+|-----------------|----------------|------------------------------|---------------|
+| Data para filtrar  | Data           | ≥ data atual        |               |
+| Status  | Seleção unica: Reservado, Em andamento, Finalizada, Cancelada          | ≥ data atual        |               |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| registrar | Pedido enviado a central  | default |
-| cancelar | fim do processo  | cancel |
 
-## Tela 2 – Pedido enviado à central de serviços internos
 
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| ID do pedido | Número  |        gerado automaticamente        |        auto           |
-|         Departamento destino        |         Seleção única         |        baseado no tipo de serviço        |                   |
-| Observações internas | Área de texto  |                |                   |
+| **Comandos** | **Destino**                      | **Tipo** |
+|--------------|----------------------------------|----------|
+| Criar Reserva    | Criar Reserva no sistema     | default  |
+| Consumo    | Calcula consumo     | default  |
+| Excluir    | Exclui reserva     | default  |
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| encaminhar | Fim do processo  | default |
+---
