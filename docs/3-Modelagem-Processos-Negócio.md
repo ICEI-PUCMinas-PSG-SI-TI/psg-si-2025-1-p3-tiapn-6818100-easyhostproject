@@ -51,15 +51,15 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Gestão de reservas](./processos/processo-1-Gestao-de-Reservas.md "Detalhamento do Processo 1.")
+[Processo 1 – Configuração Inicial e Cadastro de Quartos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%201%20%E2%80%93%20Configura%C3%A7%C3%A3o%20Inicial%20e%20Cadastro%20de%20Quartos)
 
-[Processo 2 – CHECK IN](./processos/processo-2-CheckIn.md "Detalhamento do Processo 2.")
+[Processo 2 – Reserva de Hóspedes](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%202%20%E2%80%93%20Reserva%20de%20H%C3%B3spedes)
 
-[PROCESSO 3 - CHECKOUT](./processos/processo-3-checkout.md "Detalhamento do Processo 2.")
+[Processo 3 – Gestão de Status de Reserva](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%203%20%E2%80%93%20Gest%C3%A3o%20de%20Status%20de%20Reserva)
 
-[PROCESSO 4 - Registrar despesas](./processos/processo-4-RegistrarDespesas.md)
+[Processo 4 – Controle de Consumos e Despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%204%20%E2%80%93%20Controle%20de%20Consumos%20e%20Despesas)
 
-[PROCESSO 5 - Gerenciamento do serviço para Hóspedes](./processos/processo-5-Gerenciamento-do-servico-para-Hospedes.md)
+[Processo 5 – Check-out](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%205%20%E2%80%93%20Check-out)
 
-[Processo 6 – Gerenciamento de Serviços Internos](./processos/processo-6-Gerenciamento-de-Serviços-Internos.md)
+[Processo 6 – Relatórios e Análises](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%206%20%E2%80%93%20Relat%C3%B3rios%20e%20An%C3%A1lises)
 
