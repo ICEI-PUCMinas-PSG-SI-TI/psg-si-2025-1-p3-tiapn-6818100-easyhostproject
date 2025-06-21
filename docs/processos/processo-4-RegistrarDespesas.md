@@ -1,74 +1,46 @@
-### 3.3.4 Processo 4 - Registro de Despesas
+### 3.3.4 Processo 4 – Controle de Consumos e Despesas
 
-O módulo de Registro de Despesas centraliza todos os lançamentos de consumo — alimentação, lavanderia, minibar e serviços adicionais — em um único ponto de entrada. Desde a captura dos dados do hóspede até a classificação automática por tipo de despesa e valor, o sistema assegura precisão e consistência nos lançamentos, eliminando retrabalho e erros de digitação.
+Durante a estadia, todas as despesas adicionais do hóspede, como refeições, produtos e serviços, devem ser registradas no sistema e vinculadas ao perfil do cliente. A cada novo lançamento, o sistema atualiza automaticamente o valor total de consumos, integrando-os ao custo final da reserva. Caso sejam identificados lançamentos incorretos, o sistema permite a exclusão dos itens, realizando o recálculo imediato dos valores totais. Esse controle garante que a fatura final reflita com precisão todos os consumos efetuados durante a hospedagem.
 
-**Modelo de processo (BPMN) - Processo Pagamento:**
+**Modelo de processo (BPMN) - Controle de Consumos e Despesas:**
 
-![Diagrama - Processo Pagamento](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20processo%204%20-%20processo%20de%20pagamento.png)
+![Diagrama - Controle de Consumos e Despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/Diagrama%20Processo%204%20%E2%80%93%20Controle%20de%20Consumos%20e%20Despesas.png)
 
-## Tela 1 – Registrar despesas
+## Tela 1 – Hospedes
 
 | **Campo**          | **Tipo**         | **Restrições**                         | **Valor default** |
 |--------------------|------------------|----------------------------------------|-------------------|
-| Nome do hóspede    | Caixa de texto   | obrigatório                            |                   |
-| Nº da reserva      | Número           | obrigatório                            |                   |
-| Tipo de despesa    | Seleção única    | alimentação, lavanderia, etc.          |                   |
-| Valor da despesa   | Número           | > 0                                    |                   |
-| Data da despesa    | Data             | ≥ data mínima do sistema               | data atual        |
+| Buscar por nome    | Caixa de texto   | obrigatório                            |                   |
 
 | **Comandos** | **Destino**                   | **Tipo** |
 |--------------|-------------------------------|----------|
-| salvar       | Verificar conformidade        | default  |
+| AddConsumo       | Adcionar Consumo        | default  |
+| Consumo       | Consumos do Hóspede        | default  |
+| Excluir       | Excluir Hóspede        | default  |
+
 
 ---
 
-## Tela 2 – Verificar conformidade das despesas
+## Tela 2 – Adicionar consumo
 
 | **Campo**         | **Tipo**   | **Restrições**   | **Valor default**          |
 |-------------------|------------|------------------|----------------------------|
-| Lista de despesas | Tabela     | somente leitura  | preenchida pelo sistema    |
+| Nome consumo | Caixa de texto     |       |    |
+| Preço | Dinheiro     |       |    |
 
 | **Comandos** | **Destino**    | **Tipo** |
 |--------------|----------------|----------|
-| continuar    | Decisão: Já pagou? | default  |
+| Adicionar    | Hospedes | default  |
+| Cancelar    | Hospedes | default  |
 
 ---
 
-## Tela 3 – Cobrar as despesas
+## Tela 3 – Consumos Hóspede
 
-| **Campo**            | **Tipo**         | **Restrições**    | **Valor default** |
-|----------------------|------------------|-------------------|-------------------|
-| Valor total          | Número           | somente leitura   |                   |
-| Forma de pagamento   | Seleção única    | crédito, débito, pix |                |
 
 | **Comandos** | **Destino**          | **Tipo** |
 |--------------|----------------------|----------|
-| pagar        | Confirmar pagamento  | default  |
+| Excluir        | Exclui consumo  | default  |
+| Fechar        | Fecha janela  | default  |
 
 ---
-
-## Tela 4 – Somar hospedagem + despesas
-
-| **Campo**             | **Tipo**   | **Restrições**   | **Valor default** |
-|-----------------------|------------|------------------|-------------------|
-| Valor da hospedagem   | Número     | somente leitura  |                   |
-| Valor das despesas    | Número     | somente leitura  |                   |
-| Total a pagar         | Número     | somente leitura  |                   |
-
-| **Comandos**   | **Destino**          | **Tipo** |
-|----------------|----------------------|----------|
-| cobrar total   | Confirmar pagamento  | default  |
-
----
-
-## Tela 5 – Confirmar pagamento
-
-| **Campo**        | **Tipo**         | **Restrições**       | **Valor default** |
-|------------------|------------------|----------------------|-------------------|
-| Confirmação      | Seleção única    | sim, não             |                   |
-| Data e hora      | Data e Hora      | automática            | data atual        |
-
-| **Comandos** | **Destino**          | **Tipo** |
-|--------------|----------------------|----------|
-| finalizar    | Fim do processo      | default  |
-
