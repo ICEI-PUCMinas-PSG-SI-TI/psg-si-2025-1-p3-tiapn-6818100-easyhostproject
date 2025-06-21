@@ -51,15 +51,15 @@ A proposta está alinhada com a estratégia de modernização e otimização dos
 
 ### 3.3. Modelagem dos processos
 
-[Processo 1 – Configuração Inicial e Cadastro de Quartos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%201%20%E2%80%93%20Configura%C3%A7%C3%A3o%20Inicial%20e%20Cadastro%20de%20Quartos)
+[Processo 1 – Configuração Inicial e Cadastro de Quartos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%201%20%E2%80%93%20Configura%C3%A7%C3%A3o%20Inicial%20e%20Cadastro%20de%20Quartos.md)
 
-[Processo 2 – Reserva de Hóspedes](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%202%20%E2%80%93%20Reserva%20de%20H%C3%B3spedes)
+[Processo 2 – Reserva de Hóspedes](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%202%20%E2%80%93%20Reserva%20de%20H%C3%B3spedes.md)
 
-[Processo 3 – Gestão de Status de Reserva](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%203%20%E2%80%93%20Gest%C3%A3o%20de%20Status%20de%20Reserva)
+[Processo 3 – Gestão de Status de Reserva](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%203%20%E2%80%93%20Gest%C3%A3o%20de%20Status%20de%20Reserva.md)
 
-[Processo 4 – Controle de Consumos e Despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%204%20%E2%80%93%20Controle%20de%20Consumos%20e%20Despesas)
+[Processo 4 – Controle de Consumos e Despesas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%204%20%E2%80%93%20Controle%20de%20Consumos%20e%20Despesas.md)
 
-[Processo 5 – Check-out](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%205%20%E2%80%93%20Check-out)
+[Processo 5 – Check-out](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%205%20%E2%80%93%20Check-out.md)
 
-[Processo 6 – Relatórios e Análises](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%206%20%E2%80%93%20Relat%C3%B3rios%20e%20An%C3%A1lises)
+[Processo 6 – Relatórios e Análises](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/processos/Processo%206%20%E2%80%93%20Relat%C3%B3rios%20e%20An%C3%A1lises.md)
 
