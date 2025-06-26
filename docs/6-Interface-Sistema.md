@@ -14,7 +14,7 @@ Indicadores:
 **Descrição:**  
 Tela inicial exibida após o login. Apresenta um menu com atalhos para todas as funcionalidades principais: usuários, hóspedes, quartos, reservas, consumos, status e relatórios. É o ponto central de navegação.
 
-[Tela principal](images/WIREFRAMES/Wireframes - HOME.png)
+![Tela Principal do Sistema](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Principal%20Sistema.PNG?raw=true)
 
 ---
 
@@ -23,17 +23,18 @@ Tela inicial exibida após o login. Apresenta um menu com atalhos para todas as 
 ### • Cadastro de quartos  
 Permite adicionar número do quarto, tipo de camas, capacidade máxima e preço da diária.
 
-[Cadastro de Quarto](images/WIREFRAMES/Wireframes - CADASTRO DE QUARTOS.png)
+![Cadastro de Quarto](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Cadastro%20de%20Quarto.PNG)
 
 ### • Edição de quartos  
 Interface para atualizar os dados de um quarto já existente.
 
-[Edição de Quarto](images/WIREFRAMES/Wireframes - EDIÇÃO DE QUARTO (ADMIN).png)
+![Edição de Quarto](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Edi%C3%A7%C3%A3o%20de%20Quarto.PNG)
 
 ### • Menu de quartos  
 Exibição dos quartos cadastrados com opções para editar e excluir.
+Opção Excluir está indisponivel pois eles estão associados a uma reserva existente.
 
-[Menu de Quartos](images/WIREFRAMES/Wireframes - MENU DE QUARTOS.png)
+![Menu de Quartos](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Gerenciamento%20de%20Quarto.PNG)
 
 ---
 
@@ -42,12 +43,12 @@ Exibição dos quartos cadastrados com opções para editar e excluir.
 ### • Cadastro de hóspede  
 Formulário para inserir novos hóspedes com nome, CPF e hotel.
 
-[Cadastro de Hóspede](images/WIREFRAMES/WIREFRAME - CADASTRO DE HOSPEDE.png)
+![Cadastro de Hóspede](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Cadastro%20de%20H%C3%B3spede.PNG)
 
 ### • Cadastro de reservas  
 Tela para reservar quartos, informando período, hóspede, quarto e status.
 
-[Cadastro de Reserva](images/WIREFRAMES/Wireframes - CADASTRO DE RESERVAS.png)
+![Cadastro de Reserva](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Cadastro%20de%20Reserva.PNG)
 
 ---
 
@@ -56,7 +57,7 @@ Tela para reservar quartos, informando período, hóspede, quarto e status.
 ### • Página de reservas  
 Permite visualizar e atualizar o status das reservas: Reservada, Confirmada, Em Andamento, Concluída ou Cancelada.
 
-[Página de Reservas](images/WIREFRAMES/Wireframes - PAGINA DE RESERVAS.jpg)
+![Página de Reservas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20P%C3%A1gina%20de%20Reservas.PNG)
 
 ---
 
@@ -65,12 +66,12 @@ Permite visualizar e atualizar o status das reservas: Reservada, Confirmada, Em 
 ### • Cadastro de consumo  
 Registra despesas e consumos feitos por hóspedes durante a estadia.
 
-[Cadastro de Consumo](images/WIREFRAMES/Wireframes - CADASTRO DE CONSUMO.png)
+![Cadastro de Consumo](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Cadastro%20de%20Consumo.PNG)
 
 ### • Lista de consumo por hóspede  
 Visualização detalhada dos itens consumidos por cada hóspede.
 
-[Lista de Consumo](images/WIREFRAMES/Wireframes - LISTA DE CONSUMO HOSPODES.jpg)
+![Lista de Consumo](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Lista%20de%20Consumo.PNG)
 
 ---
 
@@ -79,7 +80,7 @@ Visualização detalhada dos itens consumidos por cada hóspede.
 ### • Visualizar consumo total da reserva  
 Mostra a somatória dos consumos vinculados à reserva no momento do check-out.
 
-[Resumo de Consumo](images/WIREFRAMES/Wireframes - VISUALIZAR O CONSUMO TOTAL DA RESERVA.jpg)
+![Resumo de Consumo](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Resumo%20de%20Consumo.PNG)
 
 ---
 
@@ -88,5 +89,5 @@ Mostra a somatória dos consumos vinculados à reserva no momento do check-out.
 ### • Menu de relatórios  
 Permite acesso a estatísticas como tempo médio de estadia e produtos mais consumidos.
 
-[Relatórios e Análises](images/WIREFRAMES/Wireframes - MENU DE RELATORIOS.jpg)
+![Relatórios e Análises](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-easyhostproject/blob/main/docs/images/TELAS_SISTEMA/Tela%20Relatorios%20e%20Analises.PNG)
 
