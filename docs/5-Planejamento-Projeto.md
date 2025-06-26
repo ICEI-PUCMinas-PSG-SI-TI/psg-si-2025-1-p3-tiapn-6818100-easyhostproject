@@ -84,12 +84,12 @@ Atualizado em: 13/06/2024
 
 | Responsável | Tarefa/Requisito                       | Iniciado em | Prazo      | Status | Terminado em |
 | :----       |    :----                               |      :----: | :----:     | :----: | :----:       |
-| Thiago      |    Telas do Processo - BD              |      29/05  | 13/06      | 📝     |        |
+| Thiago      |    Telas do Processo - BD              |      29/05  | 13/06      | ✔️     |        |
 | Guilherme   |    Telas do Processo - Classes         |      29/05  | 23/05      | ✔️     | 04/06       |
 | Gabriel     |    Telas do Processo - Classes         |      29/05  | 23/05      | ✔️     | 04/06      |
-| Thiago      |    Telas do Processo - Classes         |      29/05  | 23/05      | ✔️     | 04/06      |
-| Thiago      |    Telas do Processo - BackEnd         |      29/05  | 23/05      | 📝     |      |
-| Bruno       |    Telas do Processo - FrontEnd        |      06/04  | 23/05      | 📝     |        |
+| Gabriel      |    Telas do Processo - Classes         |      29/05  | 23/05      | ✔️     | 04/06      |
+| Thiago      |    Telas do Processo - BackEnd         |      29/05  | 23/05      | ✔️     |   19/06   |
+| Thiago      |    Telas do Processo - FrontEnd        |      06/04  | 23/05      | ✔️     |   20/06     |
 
 Legenda:
 - ✔️: terminado

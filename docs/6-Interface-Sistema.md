@@ -11,30 +11,82 @@ Indicadores:
 
 ## 6.1. Tela principal do sistema
 
-_Descrição da tela principal do sistema._
+**Descrição:**  
+Tela inicial exibida após o login. Apresenta um menu com atalhos para todas as funcionalidades principais: usuários, hóspedes, quartos, reservas, consumos, status e relatórios. É o ponto central de navegação.
 
-[`Tela principal do sistema`](images/)
+[Tela principal](images/WIREFRAMES/Wireframes - HOME.png)
 
+---
 
-## 6.2. Telas do processo 1
+## 6.2. Telas do Processo 1 – Configuração Inicial e Cadastro de Quartos
 
-_Descrição da tela relativa à atividade 1._
+### • Cadastro de quartos  
+Permite adicionar número do quarto, tipo de camas, capacidade máxima e preço da diária.
 
-[`Tela da atividade 1`](images/)
+[Cadastro de Quarto](images/WIREFRAMES/Wireframes - CADASTRO DE QUARTOS.png)
 
-_Descrição da tela relativa à atividade 2._
+### • Edição de quartos  
+Interface para atualizar os dados de um quarto já existente.
 
-[`Tela da atividade 2`](images/)
+[Edição de Quarto](images/WIREFRAMES/Wireframes - EDIÇÃO DE QUARTO (ADMIN).png)
 
+### • Menu de quartos  
+Exibição dos quartos cadastrados com opções para editar e excluir.
 
-## 6.3. Telas do processo 2
+[Menu de Quartos](images/WIREFRAMES/Wireframes - MENU DE QUARTOS.png)
 
-_Descrição da tela relativa à atividade 1._
+---
 
-[`Tela da atividade 1`](images/)
+## 6.3. Telas do Processo 2 – Reserva de Hóspedes
 
-_Descrição da tela relativa à atividade 2._
+### • Cadastro de hóspede  
+Formulário para inserir novos hóspedes com nome, CPF e hotel.
 
-[`Tela da atividade 2`](images/)
+[Cadastro de Hóspede](images/WIREFRAMES/WIREFRAME - CADASTRO DE HOSPEDE.png)
 
+### • Cadastro de reservas  
+Tela para reservar quartos, informando período, hóspede, quarto e status.
+
+[Cadastro de Reserva](images/WIREFRAMES/Wireframes - CADASTRO DE RESERVAS.png)
+
+---
+
+## 6.4. Telas do Processo 3 – Gestão de Status de Reserva
+
+### • Página de reservas  
+Permite visualizar e atualizar o status das reservas: Reservada, Confirmada, Em Andamento, Concluída ou Cancelada.
+
+[Página de Reservas](images/WIREFRAMES/Wireframes - PAGINA DE RESERVAS.jpg)
+
+---
+
+## 6.5. Telas do Processo 4 – Controle de Consumos e Despesas
+
+### • Cadastro de consumo  
+Registra despesas e consumos feitos por hóspedes durante a estadia.
+
+[Cadastro de Consumo](images/WIREFRAMES/Wireframes - CADASTRO DE CONSUMO.png)
+
+### • Lista de consumo por hóspede  
+Visualização detalhada dos itens consumidos por cada hóspede.
+
+[Lista de Consumo](images/WIREFRAMES/Wireframes - LISTA DE CONSUMO HOSPODES.jpg)
+
+---
+
+## 6.6. Telas do Processo 5 – Check-out
+
+### • Visualizar consumo total da reserva  
+Mostra a somatória dos consumos vinculados à reserva no momento do check-out.
+
+[Resumo de Consumo](images/WIREFRAMES/Wireframes - VISUALIZAR O CONSUMO TOTAL DA RESERVA.jpg)
+
+---
+
+## 6.7. Telas do Processo 6 – Relatórios e Análises
+
+### • Menu de relatórios  
+Permite acesso a estatísticas como tempo médio de estadia e produtos mais consumidos.
+
+[Relatórios e Análises](images/WIREFRAMES/Wireframes - MENU DE RELATORIOS.jpg)
 
